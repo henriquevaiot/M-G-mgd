@@ -38,7 +38,7 @@ export default function Header() {
                 <ContainerNavHeader>
                     <ContainerLogo>
                         <img
-                            src={logo} />
+                            src={logo} width="80%"/>
                     </ContainerLogo>
 
                     <Tag href="/">

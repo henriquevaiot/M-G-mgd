@@ -20,8 +20,9 @@ export const Texto = styled(Tag)`
     color: #fff;
     margin: 20px;
     font-size: 16px;
+    font-weight: 300;
 
-    &:hover,
+    &:hover, 
     &:focus {
         color: #CADBF2;
     }
@@ -33,7 +34,7 @@ export const ContainerNavHeader = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: -17px;
+    margin-top: -10px;
 `
 export const ContainerLinks = styled.div`
     display: flex;
