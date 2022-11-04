@@ -35,8 +35,8 @@ export const Box = styled.div`
     margin-top: -90px;
 `
 export const BoxImg = styled.div`
-    background-image: url(${bg1});
-    height: 320px;
+    background-image: url(${bg2});
+    height: 400px;
     background-size: 100% auto;
     /* background-color: red; */
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@ export const BoxImg = styled.div`
     text-align: center;
 `
 export const BoxImg2 = styled.div`
-    background-image: url(${bg2});
+    background-image: url(${bg1});
     height: 410px;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -79,3 +79,4 @@ export const Title = styled.p`
     text-align: center;
     margin-top: 7px;
 `
+export const Description = styled.p``

@@ -8,7 +8,8 @@ import {
     Bloco,
     BoxImg2,
     BoxImg3,
-    BoxImg4
+    BoxImg4,
+    Description
 } from './styles'
 
 export default function Servico() {
@@ -21,7 +22,7 @@ export default function Servico() {
                             style={{
                                 height: 50,
                                 width: 220,
-                                backgroundColor: '#fff',
+                                backgroundColor: '#C99C1E',
                                 marginTop: 70,
                                 marginRight: 30,
                                 borderTopLeftRadius: 30,
@@ -29,33 +30,25 @@ export default function Servico() {
                             }}>
                             <p
                                 style={{
-                                    color: '#0787B5',
+                                    color: '#000000',
                                     fontWeight: 'bold',
                                     textAlign: 'center',
                                     marginTop: 7,
                                     fontFamily: 'LemonMilk'
-                                }}>FABRICACAO E<br />
-                                MONTAGEM DE DUTOS</p>
+                                }}>ENGENHARIA <br/> E PROJETOS</p>
                         </Bloco>
 
                     </ContainerTitle>
                     <BoxImg>
                         <p style={{
                             color: 'white',
-                            fontSize: 13,
-                            marginTop: 20,
+                            fontSize: 15,
+                            marginTop: 70,
                             marginRight: 25,
+                            fontWeight: 100,
                             }}>
-                            Equipe especializada para<br />
-                            fabricação e montagem de redes<br /> dutos metálicos e MPU.<br /><br />
-
-                            Os dutos são fabricados<br />
-                            conforme normas vigentes e<br />
-                            especificações de projetos,<br />
-                            seguindo um rigoroso<br />
-                            processo de qualidade e<br />
-                            higienização para fabricação<br />
-                            e montagem.
+                            Equipe de engenharia <br/> qualificada e capacitada para <br/> elaboração de projetos <br/> executivos levando em <br/> consideração todas as normas <br/> vigentes e particularidades de <br/> cada empreendimento <br/><br/> Nossos projetos incluem levanta-<br/>mento de informações em <br/> campo, apresentação de um pré-<br/>projeto, memorial de cálculos, <br/>
+                            memorial descritivo, planta <br/> baixa, detalhes típicos <br/> cortes esquemáticos <br/> e ART de projeto.
                         </p>
                     </BoxImg>
                 </Box>
@@ -66,7 +59,7 @@ export default function Servico() {
                             style={{
                                 height: 50,
                                 width: 220,
-                                backgroundColor: '#fff',
+                                backgroundColor: '#C99C1E',
                                 marginTop: 70,
                                 marginRight: 30,
                                 borderTopLeftRadius: 30,
@@ -74,7 +67,7 @@ export default function Servico() {
                             }}>
                             <p
                                 style={{
-                                    color: '#0787B5',
+                                    color: '#000000',
                                     fontWeight: 'bold',
                                     textAlign: 'center',
                                     marginTop: 7,
@@ -85,16 +78,12 @@ export default function Servico() {
 
                     </ContainerTitle>
                     <BoxImg2>
-                        <p style={{ color: 'white', fontSize: 13, marginTop: 55, marginRight: 25 }}>
-                            Visitas técnicas, visando um estudo<br /> do projeto inicial, onde serão<br /> realizados levantamentos em campo,<br /> análises das necessidades do<br /> empreendimento e as exigências do<br /> cliente, sempre respeitando as<br /> normas pertinentes  e a segurança.<br /><br />
+                        <p style={{ color: 'white', fontSize: 13, marginTop: -75,marginRight: 25 }}>
+                                Equipe especializada para <br/> fabricação e montagem de redes <br/> dutos metálicos e MPU <br/> <br/>
 
-                            Projetos executivos, execução de<br /> instalações, startups, testes e<br /> comissionamento de sistemas.<br /><br />
-
-                            Retrofit dos sistemas HVAC com<br /> fornecimento de equipamentos,<br />
-                            peças e acessórios.<br /><br />
-
-                            Elaboração e entrega do Databook<br /> (Manuais e “As Built”) dos sistemas<br /> HVAC.
-
+                                Os dutos são fabricadas <br/> conforme normas vigentes e <br/> especificações de projetos <br/> segudno um rigoroso processo <br/>
+                                de qualidade e higienização <br/>
+                                para fabricação e montagem
                         </p>
                     </BoxImg2>
                 </Box>
@@ -105,7 +94,7 @@ export default function Servico() {
                             style={{
                                 height: 50,
                                 width: 220,
-                                backgroundColor: '#fff',
+                                backgroundColor: '#C99C1E',
                                 marginTop: 70,
                                 marginRight: 30,
                                 borderTopLeftRadius: 30,
@@ -113,32 +102,43 @@ export default function Servico() {
                             }}>
                             <p
                                 style={{
-                                    color: '#0787B5',
+                                    color: '#000000',
                                     fontWeight: 'bold',
                                     textAlign: 'center',
-                                    marginTop: 7,
+                                    marginTop: 18,
                                     fontFamily: 'LemonMilk'
-                                }}>FABRICACAO E<br />
-                                MONTAGEM DE DUTOS</p>
+                                }}>INSTALACAO E RETROFIT</p>
                         </Bloco>
 
                     </ContainerTitle>
-                    <BoxImg3>
-                        <p style={{ color: 'white', fontSize: 13, marginTop: 65, marginRight: 25 }}>
-                            Disponibilizamos de técnicos<br /> capacitados a executar as atividades<br /> de manutenção preventiva em<br /> conformidade com o PMOC e<br /> manutenção corretiva não programada.<br /><br />
+                    <BoxImg3 style={{display: 'flex', flexDirection: 'column'}}>
+                        <Description style={{ color: 'white', fontSize: 13, marginTop: 65, marginRight: 25 }}>
+                            Visitas técnicas visando um <br/>
+                            estudo do projeto inicial onde <br/>
+                            serão realizados levantamentos <br/>
+                            em campo, análise das <br/>
+                            necessidades do em- <br/>
+                            preendimento e as exigências do <br/>
+                            clientes, sempre respeitas as <br/>
+                            normas pertinentes e a <br/>
+                            segurança
+                        </Description>
+                        <Description style={{ color: 'white', fontSize: 13, marginTop: 5, marginRight: 25, fontWeight: 'bold' }}>
+                            Projetos executivos, execução de <br/>
+                            instalações, startups, testes e <br/>
+                            comissionamento de <br/> sistemas <br/><br/>
+                        </Description>
 
-                            Contamos com equipe de<br />
-                            engenheiros capacitados para<br /> elaboração, implantação e<br /> manutenção de PMOC (Plano de<br /> Manutenção, Operação e Controle),<br /> em conformidade com as premissas<br /> legais e normas vigentes para<br /> sistemas de ar condicionado,<br /> garantindo a qualidade dos sistemas<br /> e satisfação dos nossos clientes.<br /><br />
+                        <Description style={{ color: 'white', fontSize: 13, marginTop: -15, marginRight: 25}}>
+                        Retrofit dos sistemas HVAC com<br/> fornecimento de equipamentos, <br/>
+                            peças e acessórios <br/><br/>
+                        </Description>
 
-                            Com plantões em períodos de 24<br /> horas por dia, disponibilizamos de<br /> técnicos e engenheiros para<br /> execução de manutenções,<br /> preventivas, corretivas e preditivas<br /><br />
-
-                            Manutenção preventiva<br /><br />
-
-                            Manutenção corretiva<br /><br />
-
-                            Manutenção preditiva
-
-                        </p>
+                        <Description style={{ color: 'white', fontSize: 13, marginTop: -15, marginRight: 25, fontWeight: 'bold' }}>
+                            Elaboração e entrega do <br/>
+                            Databook (Manuais e "As Built")<br/>
+                            dos sistemas HVAC
+                        </Description>
                     </BoxImg3>
                 </Box>
 
@@ -148,78 +148,44 @@ export default function Servico() {
                             style={{
                                 height: 50,
                                 width: 250,
-                                backgroundColor: '#fff',
+                                backgroundColor: '#C99C1E',
                                 marginTop: 70,
                                 borderTopLeftRadius: 30,
                                 borderTopRightRadius: 30
                             }}>
                             <p
                                 style={{
-                                    color: '#0787B5',
+                                    color: '#000000',
                                     fontWeight: 'bold',
                                     textAlign: 'center',
-                                    marginTop: 7,
+                                    marginTop: 10,
                                     fontFamily: 'LemonMilk'
-                                }}>FABRICACAO E<br />
-                                MONTAGEM DE DUTOS</p>
+                                }}>BALANCEAMENTO E <br/> COMISSIONAMENTO
+                            </p>
                         </Bloco>
 
                     </ContainerTitle>
-                    <BoxImg4>
-                        <p style={{ color: 'white', fontSize: 13, marginTop: 65 }}>
-                            Equipe de engenharia qualificada<br />
-                            e capacitada para elaboração de<br /> projetos executivos, levando em<br /> consideração todas as normas<br />
-                            vigentes e particularidades de cada <br />empreendimento.<br /><br />
-
-                            Nossos projetos incluem<br /> levantamento de informações em<br /> campo, apresentação de um pré-<br />projeto, memorial de cálculos, <br />memorial descritivo, planta baixa,<br /> detalhes<br />
-                            típicos, cortes esquemáticos<br />
-                            e ART de projeto.
-                        </p>
+                    <BoxImg4 style={{display: 'flex', flexDirection: 'column'}}>
+                        <Description style={{ color: 'white', fontSize: 13, marginTop: 100 }}>
+                            Com profissionais capacitados e <br/> 
+                            instrumentos com tecnologia <br/>avançada realizamos o <br/>
+                            balanceamo e <br/> comissionamento de novos <br/>
+                            projetos, ambientes com layouts <br/>
+                            modificados ampliação de salas <br/>
+                            ambientes com pontos de <br/>
+                            desconforto térmico entre<br/> outro
+                        </Description>
+                        <Description style={{ color: 'white', fontSize: 13, marginTop: -5, fontWeight: 'bold' }}>
+                            BALANCEAMENTO CONSISTE EM: 
+                        </Description>
+                        <Description style={{ color: 'white', fontSize: 13, marginTop: -5}}>
+                            O balanceamento é utilizado<br/> para o direcionamento do fluxo <br/>
+                            de ar, para garantir a <br/>
+                            homogeneidade na distribuição <br/>
+                            do ar e na climatização do <br/> ambiente.
+                        </Description>
                     </BoxImg4>
                 </Box>
-                {/* 
-                <Box>
-                    <ContainerTitle>
-                        <Bloco style={{
-                            height: 50,
-                            width: 235,
-                            marginRight: 15,
-                            backgroundColor: '#fff',
-                            marginTop: 70,
-                            borderTopLeftRadius: 30,
-                            borderTopRightRadius: 30
-                        }}> <p style={{
-                            color: '#0787B5',
-                            fontWeight: 'bold',
-                            textAlign: 'center',
-                        }}>MANUTENÇÃO E PMOC</p> </Bloco>
-                    </ContainerTitle>
-                    <BoxImg>
-                        <img src={quad3} height="540" />
-                    </BoxImg>
-                </Box>
-                <Box>
-                    <ContainerTitle>
-                        <Bloco style={{
-                            height: 50,
-                            width: 270,
-                            marginLeft: 20,
-                            backgroundColor: '#fff',
-                            marginTop: 70,
-                            borderTopLeftRadius: 30,
-                            borderTopRightRadius: 30
-                        }}> <p style={{
-                            color: '#0787B5',
-                            fontWeight: 'bold',
-                            textAlign: 'center',
-                            marginTop: 7
-                        }}>ENGENHARIA<br />
-                                E PROJETOS</p> </Bloco>
-                    </ContainerTitle>
-                    <BoxImg>
-                        <img src={quad4} height="360" />
-                    </BoxImg>
-                </Box> */}
             </ContainerBox>
         </Container>
     )

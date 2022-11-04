@@ -18,12 +18,11 @@ import logo from '../../assets/logo.png'
 import wpp from '../../assets/wpp.png'
 import email from '../../assets/email.png'
 
+
 export default function Header() {
     return (
         <HeaderContainer>
-
-            <Teste>
-                <ContainerLinks>
+                {/* <ContainerLinks>
                     <LinkWpp>
                             <img src={wpp} width="17%" />
                         <TextWpp>Fale Cosnoco</TextWpp>
@@ -33,13 +32,9 @@ export default function Header() {
                         <img src={email} width="15%" />
                         <TextEmail>Enviar Mensagem</TextEmail>
                     </LinkEmail>
-                </ContainerLinks>
-
-                <ContainerNavHeader>
-                    <ContainerLogo>
+                </ContainerLinks> */}
                         <img
                             src={logo} width="80%"/>
-                    </ContainerLogo>
 
                     <Tag href="/">
                         <Texto>HOME</Texto>
@@ -62,9 +57,6 @@ export default function Header() {
                     <Tag href="/">
                         <Texto>CONTATO</Texto>
                     </Tag>
-                </ContainerNavHeader>
-            </Teste>
-
         </HeaderContainer>
     )
 }

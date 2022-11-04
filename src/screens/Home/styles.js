@@ -14,22 +14,35 @@ import px2vw from "../../utils/px2vw";
 import { rgba } from 'polished'
 
 
-export const Container = styled.div``
+export const Container = styled.div`
+    width: 100%;
+`
 export const HomeContainer = styled.div`
     background-image: url(${img});
-    background-size: 100% auto;
+    background-size: auto auto;
     background-repeat: no-repeat;
+    width: 100%;
+
+    background-color: red;
+
+    @media screen and (max-width: 737){
+        width: 60%;
+    }
 `
 export const ContainerMovie = styled.div`
-    height: 855px;
+    height: 140vh;
     margin-top: 10px;
     background-image: url(${bg2});
     background-position: top center;
-    background-size: 100% auto;
+    background-size: auto auto;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 390){
+        height: 49vh;
+    }
 `
 export const BannerContainer = styled.div`
     display: flex;
@@ -51,7 +64,7 @@ export const ContainerGlobalForm = styled.div`
 `
 export const ContainerInform = styled.div`
     background-color: teal;
-    height:  1080px;
+    height: 60vh;
     background-image: url(${bg3});
     background-position: top center;
     background-size: 110% auto;
@@ -165,7 +178,7 @@ export const ContainerGaleria = styled.div`
     height: 500px;
     width: 100%;
     margin: 0 auto;
-    min-height: 100vh;
+    min-height: 89vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,12 +221,25 @@ export const ContALign = styled.div`
 /*     flex-direction: column; */
 `
 export const ContainerConteudoTexto = styled.div`
-    height: 500px;
+    height: 1000px;
     margin-left: 10%;
+    @media (max-width: 768px) {
+    flex-direction: column;
+    display: flex;
+  }
+    /* background-color: red; */
 `
 export const Conteudo1 = styled.div`
     display: flex;
     flex-direction: column;
+    width: 100%;
+
+    @media (max-width: 768px) {
+    flex-direction: column;
+    display: flex;
+    background-color: red;
+    margin-right: 50px;
+  }
 `
 export const DivConteudo1 = styled.div`
     height: 357px;
@@ -246,6 +272,7 @@ export const ContainerServicos = styled.div`
     background-size: 110% auto;
     background-repeat: no-repeat;
     padding-top: 1px;
+    height: 750px;
 `
 export const BoxBalance = styled.div`
     height: 700px;
@@ -266,7 +293,8 @@ export const ContainerBalanceText = styled.div`
     margin-left: 150px;
 `
 export const ContainerCarrosselFound = styled.div`
-    width: 100%;`
+    width: 100%;
+`
 export const ContainerQuemSomos = styled.div`
     background-image: url(${fabrica});
     height: 494px;
@@ -279,16 +307,13 @@ export const ContainerFormulário = styled.div`
     background-color: #fff;
 `
 export const DivTextTitle = styled.div`
-    width: 45%;
     /* background-color: red; */
     margin-left: 150px;
 `
 export const EspecificacoesServico = styled.h1`
-    font-size: 109px;
+    font-size: 80px;
     color: #fff;
     font-family: Chapaza, serif;
-    font-size: 109px;
-    line-height: 90px;
 `
 export const TitleEspecSistemas = styled.h1`
     font-size: 109px;
@@ -375,3 +400,28 @@ export const BoxText = styled.p`
     font-size: 1rem;
   }
 `;
+export const Tag = styled.a`
+    text-decoration: none;
+`
+export const Texto = styled.p`
+color: #fff;
+margin-top: -80px;
+
+&:hover, 
+    &:focus {
+        color: #C99C1E;
+    }
+    &:active {
+        color: #C99C1E;
+    }
+`
+export const AlignItemsLocation = styled.div`
+    display: flex;
+`
+export const ContainerBlog = styled.div``
+export const ContainerDepoimentos = styled.div``
+export const TitleDepoimentos = styled.h1`
+    font-family: Chapanza;
+    margin-left: 90px;
+    font-size: 83px;
+`

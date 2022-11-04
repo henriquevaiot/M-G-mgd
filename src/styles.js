@@ -3,11 +3,13 @@ import { createGlobalStyle } from 'styled-components';
 import Signika from './fonts/Signika.ttf'
 import Chapaza from './fonts/Chapaza.ttf'
 import LemonMilk from './fonts/LemonMilk.ttf'
+import CREO from './fonts/CREO-EXTRALIGHT.TTF'
 
 export default createGlobalStyle`
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   /* background: red; */
   font-family: Open-Sans,Signika, Helvetica, Sans-Serif;
   /* background-image: url("../assets/bg.png"); */

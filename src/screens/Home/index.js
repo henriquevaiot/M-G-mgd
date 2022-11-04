@@ -20,12 +20,7 @@ import {
     ContainerPortfolio,
     ContainerGlobalForm,
     ContainerGaleria,
-    ContainerBox,
-    Box,
-    ContainerCircle,
     BalanceamentoText,
-    CircleNext,
-    BoxGaleria,
     ContainerSistem,
     DivText,
     ContainerConteudoTexto,
@@ -42,13 +37,14 @@ import {
     ContainerCircleTitle,
     TitleEspecSistemas,
     CircleDetail,
-    BlogText,
     ContainerQuemSomos,
-    ContainerFormulário,
-    ColumPhotosCarrosel,
+    Tag,
+    Texto,
+    AlignItemsLocation,
     EspecificacoesServico,
-    ColumScrollX,
-    ColumCarrosselBlog,
+    ContainerBlog,
+    ContainerDepoimentos,
+    TitleDepoimentos
 } from './styles'
 
 import './App.css'
@@ -57,6 +53,9 @@ import { motion } from 'framer-motion'
 
 import Blog from '../../components/Blog'
 import Servico from '../../components/Servicos'
+import Servico1 from '../../components/Servicos/Servicos-1/index'
+import Servico2 from '../../components/Servicos/Servicos-2/index'
+import Servico3 from '../../components/Servicos/Servicos-3/index'
 import QuemSomos from '../../components/QuemSomos'
 import CarrosselPortfolio from "components/Carrossel/CarrosselPortfolio";
 
@@ -64,6 +63,8 @@ import line from '../../assets/line.png'
 import Youtube from '../../assets/youtube.png'
 import Banner from '../../assets/banner.png'
 import Formulario from "components/Formulario";
+import Depoimentos from "components/Depoimentos";
+import mpoc from '../../assets/mpoc.jpg'
 
 import pessoa from '../../assets/pessoa.jpg'
 import pessoa1 from '../../assets/pessoa1.jpg'
@@ -94,7 +95,7 @@ export default function Home() {
         <Container>
 
             <HomeContainer>
-                <Header />
+                {<Header />}
                 <BannerContainer>
                     <img width="50%" src={Banner} />
                 </BannerContainer>
@@ -115,8 +116,8 @@ export default function Home() {
                     <img src={Youtube} width="90%" />
                 </a>
             </ContainerMovie>
-
-            <ContainerInform>
+            
+             {/* <ContainerInform>
                 <ContainerGlobalForm>
                     <ContainerBlocoSubscription>
                         <ContText>
@@ -143,13 +144,13 @@ export default function Home() {
                     </ContAndSubscription>
 
                 </ContainerGlobalForm>
-            </ContainerInform>
+            </ContainerInform>  */}
 
-            <ContainerPortfolio>
-                <CarrosselPortfolio />
-            </ContainerPortfolio>
+            {/* <ContainerQuemSomos>
+                <QuemSomos />
+            </ContainerQuemSomos> */}
 
-            <ContainerGaleria>
+            {/*  <ContainerGaleria>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
                     <motion.div
                         drag="x"
@@ -162,9 +163,9 @@ export default function Home() {
                         ))}
                     </motion.div>
                 </motion.div>
-            </ContainerGaleria>
+            </ContainerGaleria> */}
 
-            <ContainerSistem>
+            {/* <ContainerSistem>
                 <DivText>
                     <TitleEspecSistemas style={{ fontSize: 80, marginLeft: 150, marginTop: 150 }}>
                         ESPECIFICAÇÕES<br />
@@ -175,7 +176,7 @@ export default function Home() {
                     </ContainerCircleTitle>
                 </DivText>
                 <ContainerConteudoTexto style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 1 }}>
-                    <div style={{ width: 190 }}>
+                    <div className="divColumn" style={{ width: 190 }}>
                         <DivConteudo1>
                             <Bloco>
                                 <Description>
@@ -210,7 +211,7 @@ export default function Home() {
                         </DivConteudo1>
 
                     </div>
-                    <div>
+                    <div className="divColumn">
                         <DivConteudo1>
                             <Bloco>
                                 <Description style={{ width: 230 }}>
@@ -242,7 +243,7 @@ export default function Home() {
                             </BlocoImg>
                         </DivConteudo1>
                     </div>
-                    <div style={{ width: 190 }}>
+                    <div className="divColumn" style={{ width: 190 }}>
                         <DivConteudo1>
                             <Bloco>
                                 <Description>
@@ -291,62 +292,62 @@ export default function Home() {
                         </DivConteudo1>
                     </div>
                 </ContainerConteudoTexto>
-                <Blog />
-                <ContainerCarrosselFound>
-                    <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
-                        <motion.div
-                            drag="x"
-                            className="inner"
-                            dragConstraints={{ right: 0, left: width }}>
-                            {p.map(image => (
-                                <motion.div className="item" key={image}>
-                                    <img src={image} alt="texto alto" />
-                                </motion.div>
-                            ))}
-                        </motion.div>
-                    </motion.div>
-                </ContainerCarrosselFound>
-            </ContainerSistem>
+            </ContainerSistem> */}
 
-            <ContainerServicos style={{ marginTop: 40 }}>
+            {/* <ContainerServicos style={{ marginTop: 40 }}>
                 <DivTextTitle>
                     <EspecificacoesServico>ESPECIFICAÇÕES DO SERVIÇO</EspecificacoesServico>
-                </DivTextTitle>
-                <Servico />
-            </ContainerServicos>
+                    <AlignItemsLocation>
+                        <Tag href="/">
+                            <Texto>ENGENHARIA E PROJETOS</Texto>
+                        </Tag>
+                        <Tag style={{ marginLeft: 20 }} href="/">
+                            <Texto>FABRICAÇÃO E MONTAGEM DE DUTOS</Texto>
+                        </Tag>
+                        <Tag style={{ marginLeft: 20 }} href="/">
+                            <Texto>INSTAÇÃO E RETROFIT</Texto>
+                        </Tag>
+                        <Tag style={{ marginLeft: 20 }} href="/">
+                            <Texto>BALANCEAMENTO E COMISSIONAMENTO</Texto>
+                        </Tag>
+                    </AlignItemsLocation>
+                </DivTextTitle> */}
+            {/* <Servico /> */}
+            {/* <Servico1/> */}
+            {/* <Servico2 /> */}
+            {/* <Servico3/> */}
+            {/* </ContainerServicos> */}
 
-            <ContainerBalance>
+
+            {/*           <ContainerBalance>
                 <ContainerBalanceText>
                     <BoxBalance>
                         <div>
-                            <BalanceamentoText>BALANCEAMENTO E<br />
-                                COMISSIONAMENTO</BalanceamentoText>
-                            <p style={{ color: '#fff' }}>Com profissionais capacitados e instrumentos com tecnologia avançada, realizamos o<br /> balanceamento e<br />
-                                comissionamento de novos projetos, ambientes com layouts modificados, ampliação de<br /> salas, ambientes com pontos de desconforto térmico, entre outros.</p>
+                            <BalanceamentoText>MANUTENCAO E PMOC</BalanceamentoText>
+                            <p style={{ color: '#fff' }}>
+                                Disponibilizamos de ténicos capacitados a executar as atividades de <br />
+                                manutenção preventiva em conformidade com o PMOC e manutenção  <br />
+                                corretiva não programada  <br /> <br />
+                                Contamos com equipe de engenheiros capacitados para elaboração  <br />
+                                implantação e manuntenção de PMOC ( Plano de Manutenção. Operação  <br />
+                                e Controle), em conformidades com as premissas legais e normas  <br />
+                                vigentes para o sistema de ar condicionado, garantindo a qualidade dos  <br />
+                                sistemas e satisfação dos nossos clientes.  <br /> <br />
+                                Com plantões em periodos de 24 horas por dia, disponibilizarmos de  <br />
+                                técnicos e genheiros para execução de manuntenções, preventivas. <br /> <br />
+                                Manunteção preventiva <br />
+                                Manunteção corretiva <br />
+                                Manuntenção preditiva
+                            </p>
                         </div>
-                        <div>
-                            <h2 style={{ color: '#fff', fontSize: 25, fontFamily: 'LemonMilk' }}>BALANCEAMENTO CONSISTE EM:
-                            </h2>
-                            <p style={{ color: '#fff' }}>O balanceamento é utilizado para o direcionamento do fluxo de ar, para garantir a<br /> homogeneidade na distribuição do ar e na climatização do ambiente.<br /> <br />
 
-                                Com técnicos capacitados e instrumentos com tecnologias avançadas, realizamos o<br /> balanceamento do fluxo de ar para projetos novos, ambientes onde houve modificações<br /> no layout, ampliação de salas, ambientes com pontos de desconforto térmico e etc.<br /><br />
-
-                                Disponibilizamos os relatórios de balanceamentos, que através das medições utilizando<br /> equipamentos específicos e calibrados, garantimos a confiabilidade das medições e dos<br /> resultados.</p>
-                        </div>
-
-                        <div>
-                            <h2 style={{ color: '#fff', fontSize: 20, fontFamily: 'LemonMilk' }}>COMISSIONAMENTO CONSISTE EM:
-                            </h2>
-                            <p style={{ color: '#fff' }}>Disponibilização de equipe e equipamentos específicos para verificação e análise das<br /> instalações, assegurando que os sistemas e componentes do empreendimento estejam<br /> projetados, instalados, testados, mantidos e operando de acordo com as necessidades e<br /> requisitos operacionais do proprietário.<br /><br />
-
-                                O processo de comissionamento pode ser aplicado tanto a novos empreendimentos<br /> quanto a unidades e sistemas existentes em processo de expansão, modernização ou<br /> ajuste.</p>
-                        </div>
+                        <img style={{ marginTop: 15 }} src={mpoc} height="300" />
                     </BoxBalance>
                 </ContainerBalanceText>
-            </ContainerBalance>
+            </ContainerBalance> */}
 
 
-            <ContainerCarrosselFound>
+            {/*      <ContainerCarrosselFound>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
                     <motion.div
                         drag="x"
@@ -359,18 +360,35 @@ export default function Home() {
                         ))}
                     </motion.div>
                 </motion.div>
-            </ContainerCarrosselFound>
+            </ContainerCarrosselFound> */}
 
-            <ContainerQuemSomos>
-                <QuemSomos />
-            </ContainerQuemSomos>
+            {/*           <ContainerPortfolio>
+                <CarrosselPortfolio />
+            </ContainerPortfolio>
 
-            <ContainerFormulário>
-                <Formulario />
+            <ContainerBlog>
+                <Blog />
+            </ContainerBlog> */}
 
-                {/* <Global />
-                <Home boxData={data} /> */}
-            </ContainerFormulário>
+            {/* <ContainerDepoimentos>
+                <TitleDepoimentos>DEPOIMENTOS</TitleDepoimentos>
+                <Depoimentos />
+            </ContainerDepoimentos> */}
+
+            {/* <ContainerCarrosselFound>
+                <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
+                    <motion.div
+                        drag="x"
+                        className="inner"
+                        dragConstraints={{ right: 0, left: width }}>
+                        {m.map(image => (
+                            <motion.div className="item" key={image}>
+                                <img src={image} alt="texto alto" />
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                </motion.div>
+            </ContainerCarrosselFound> */}
         </Container>
     )
 }
