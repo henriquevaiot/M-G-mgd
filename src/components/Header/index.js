@@ -22,7 +22,7 @@ import email from '../../assets/email.png'
 export default function Header() {
     return (
         <HeaderContainer>
-                {/* <ContainerLinks>
+            {/* <ContainerLinks>
                     <LinkWpp>
                             <img src={wpp} width="17%" />
                         <TextWpp>Fale Cosnoco</TextWpp>
@@ -33,30 +33,32 @@ export default function Header() {
                         <TextEmail>Enviar Mensagem</TextEmail>
                     </LinkEmail>
                 </ContainerLinks> */}
-                        <img
-                            src={logo} width="80%"/>
+            <ContainerNavHeader>
+                <img
+                    src={logo} width="80%" />
 
-                    <Tag href="/">
-                        <Texto>HOME</Texto>
-                    </Tag>
-                    <Tag href="/">
-                        <Texto>QUEM SOMOS</Texto>
-                    </Tag>
-                    <Tag href="/">
-                        <Texto>SISTEMAS</Texto>
-                    </Tag>
-                    <Tag href="/">
-                        <Texto>SERVIÇO</Texto>
-                    </Tag>
-                    <Tag href="/">
-                        <Texto>PORTIFÓLIO</Texto>
-                    </Tag>
-                    <Tag href="/">
-                        <Texto>BLOG</Texto>
-                    </Tag>
-                    <Tag href="/">
-                        <Texto>CONTATO</Texto>
-                    </Tag>
+                <Tag href="/">
+                    <Texto>HOME</Texto>
+                </Tag>
+                <Tag href="/">
+                    <Texto>QUEM SOMOS</Texto>
+                </Tag>
+                <Tag href="/">
+                    <Texto>SISTEMAS</Texto>
+                </Tag>
+                <Tag href="/">
+                    <Texto>SERVIÇO</Texto>
+                </Tag>
+                <Tag href="/">
+                    <Texto>PORTIFÓLIO</Texto>
+                </Tag>
+                <Tag href="/">
+                    <Texto>BLOG</Texto>
+                </Tag>
+                <Tag href="/">
+                    <Texto>CONTATO</Texto>
+                </Tag>
+            </ContainerNavHeader>
         </HeaderContainer>
     )
 }

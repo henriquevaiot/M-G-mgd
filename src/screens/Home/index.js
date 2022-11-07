@@ -36,7 +36,9 @@ import {
     ContainerCarrosselFound,
     ContainerCircleTitle,
     TitleEspecSistemas,
+    ContDescription1,
     CircleDetail,
+    ContAndText,
     ContainerQuemSomos,
     Tag,
     Texto,
@@ -95,7 +97,7 @@ export default function Home() {
         <Container>
 
             <HomeContainer>
-                {<Header />}
+                {/* <Header /> */}
                 <BannerContainer>
                     <img width="50%" src={Banner} />
                 </BannerContainer>
@@ -116,8 +118,8 @@ export default function Home() {
                     <img src={Youtube} width="90%" />
                 </a>
             </ContainerMovie>
-            
-             {/* <ContainerInform>
+
+            <ContainerInform>
                 <ContainerGlobalForm>
                     <ContainerBlocoSubscription>
                         <ContText>
@@ -128,29 +130,27 @@ export default function Home() {
                             </BoxTitle>
                         </ContText>
                         <ContSubscription>
-                            <p style={{ fontSize: 23, marginLeft: 20 }}>
+                            <ContDescription1>
                                 Somos uma empresa especialista em <br />fornecimento de Equipamentos, Peça, Projetos,<br /> Gerenciamento, Coordenação, Fabricação,<br /> Instalação e Manutenção de Sistema HVAC (ar<br /> condicionado, ventilação, exaustão e<br /> refrigeração).
-                            </p>
+                            </ContDescription1>
                         </ContSubscription>
                     </ContainerBlocoSubscription>
 
                     <ContAndSubscription>
-                        <p style={{ fontSize: 37, textAlign: 'end', marginRight: 100 }}>
+                        <ContAndText>
                             Possuímos ampla experiência em<br />
                             instalações de empreendimentos<br />
                             que buscam certificação LEED<br />
                             de sustentabilidade.
-                        </p>
+                        </ContAndText>
                     </ContAndSubscription>
 
                 </ContainerGlobalForm>
-            </ContainerInform>  */}
+            </ContainerInform>
 
-            {/* <ContainerQuemSomos>
                 <QuemSomos />
-            </ContainerQuemSomos> */}
 
-            {/*  <ContainerGaleria>
+            {/* <ContainerGaleria>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
                     <motion.div
                         drag="x"
@@ -165,9 +165,9 @@ export default function Home() {
                 </motion.div>
             </ContainerGaleria> */}
 
-            {/* <ContainerSistem>
+           {/*  <ContainerSistem>
                 <DivText>
-                    <TitleEspecSistemas style={{ fontSize: 80, marginLeft: 150, marginTop: 150 }}>
+                    <TitleEspecSistemas>
                         ESPECIFICAÇÕES<br />
                         DOS SISTEMAS
                     </TitleEspecSistemas>
@@ -294,7 +294,7 @@ export default function Home() {
                 </ContainerConteudoTexto>
             </ContainerSistem> */}
 
-            {/* <ContainerServicos style={{ marginTop: 40 }}>
+            <ContainerServicos>
                 <DivTextTitle>
                     <EspecificacoesServico>ESPECIFICAÇÕES DO SERVIÇO</EspecificacoesServico>
                     <AlignItemsLocation>
@@ -311,15 +311,15 @@ export default function Home() {
                             <Texto>BALANCEAMENTO E COMISSIONAMENTO</Texto>
                         </Tag>
                     </AlignItemsLocation>
-                </DivTextTitle> */}
-            {/* <Servico /> */}
-            {/* <Servico1/> */}
-            {/* <Servico2 /> */}
-            {/* <Servico3/> */}
-            {/* </ContainerServicos> */}
+                </DivTextTitle>
+                 <Servico2 />
+            </ContainerServicos>
+                {/* <Servico3/> */}
+                {/* <Servico /> */}
+               {/*  <Servico1 /> */}
 
 
-            {/*           <ContainerBalance>
+            {/* <ContainerBalance>
                 <ContainerBalanceText>
                     <BoxBalance>
                         <div>
@@ -347,7 +347,7 @@ export default function Home() {
             </ContainerBalance> */}
 
 
-            {/*      <ContainerCarrosselFound>
+            {/* <ContainerCarrosselFound>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
                     <motion.div
                         drag="x"
@@ -362,20 +362,20 @@ export default function Home() {
                 </motion.div>
             </ContainerCarrosselFound> */}
 
-            {/*           <ContainerPortfolio>
+            {/* <ContainerPortfolio>
                 <CarrosselPortfolio />
             </ContainerPortfolio>
 
             <ContainerBlog>
                 <Blog />
-            </ContainerBlog> */}
+            </ContainerBlog>
 
-            {/* <ContainerDepoimentos>
+            <ContainerDepoimentos>
                 <TitleDepoimentos>DEPOIMENTOS</TitleDepoimentos>
                 <Depoimentos />
-            </ContainerDepoimentos> */}
+            </ContainerDepoimentos>
 
-            {/* <ContainerCarrosselFound>
+            <ContainerCarrosselFound>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
                     <motion.div
                         drag="x"

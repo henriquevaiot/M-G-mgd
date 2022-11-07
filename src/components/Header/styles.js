@@ -1,21 +1,9 @@
 import styled from 'styled-components'
 
-export const HeaderContainer = styled.header`
+export const HeaderContainer = styled.div`
     display: flex;
     flex-direction: row;
-
-    background-color: red;
-
-
-    @media (max-width: 600) {   
-        flex-direction: column;
-    }
     
-`
-export const Teste = styled.div`
-    @media screen {
-        flex-direction: column;
-    }
 `
 export const ContainerLogo = styled.div`
     justify-content: center;
@@ -45,17 +33,16 @@ export const Texto = styled(Tag)`
     }
 `
 export const ContainerNavHeader = styled.div`
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: -10px;
     position: relative;
-    width: 100%; */
+    width: 100%;
 
-    display: flex;
-    flex-direction: row;
-
-    background-color: blue;
+    @media (max-width: 600px) {   
+        overflow-x: scroll;
+    }
 
 
 `
