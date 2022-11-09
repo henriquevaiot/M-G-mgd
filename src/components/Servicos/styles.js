@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import bg1 from '../../assets/quad1.png'
 import bg2 from '../../assets/quad2.png'
 import bg3 from '../../assets/quad3.png'
-import bg4 from '../../assets/quad4.png'
+import bg4 from '../../assets/logos/group.png'
 
 export const Container = styled.div`
     display: flex;
@@ -36,7 +36,7 @@ export const Box = styled.div`
 `
 export const BoxImg = styled.div`
     background-image: url(${bg2});
-    height: 400px;
+    height: 420px;
     background-size: 100% auto;
     /* background-color: red; */
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@ export const BoxImg3 = styled.div`
 `
 export const BoxImg4 = styled.div`
     background-image: url(${bg4});
-    height: 350px;
+    height: 420px;
     background-size: 100% auto;
     background-repeat: no-repeat;
     display: flex;

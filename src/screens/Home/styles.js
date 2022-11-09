@@ -276,11 +276,8 @@ export const ContainerGaleria = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: red;
-
-    @media screen and (max-width: 600px) {   
-        height: 250px;
+    @media (max-width: 600px) {   
+        display: none;
     }
 `
 export const BoxGaleria = styled.div`
@@ -472,6 +469,10 @@ export const ContainerBalanceText = styled.div`
 `
 export const ContainerCarrosselFound = styled.div`
     width: 100%;
+
+    @media (max-width: 600px) {   
+        display: none;
+    }
 `
 
 export const ContainerFormulário = styled.div`
@@ -486,6 +487,7 @@ export const DivTextTitle = styled.div`
 
     @media (max-width: 600px) {   
         margin-left: 15px;
+        margin-top: 15px;
     }
 `
 export const EspecificacoesServico = styled.h1`
@@ -511,7 +513,7 @@ export const TitleEspecSistemas = styled.h1`
         color: #000000;
         font-family: Chapaza, serif;
         line-height: 40px;
-
+        margin-left: 1px;
         margin-top: -20px;
   }
 `

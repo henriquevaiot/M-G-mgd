@@ -4,7 +4,8 @@ import {
     BlocoTextForm,
     Title,
     Description,
-    Description1
+    Description1,
+    ImgPhoto
 } from './styles'
 
 import Photo from '../../../assets/retrofit.jpg'
@@ -23,7 +24,7 @@ export default function Servico() {
                 Elaboração e entrega do Databook 'Manuais e As build' dos sistemas HVAC, esquemáticos e ART de projeto.
                 </Description>
 
-                {<img style={{ marginLeft: 150, marginTop: 15 }} src={Photo} height="230" />}
+                {<ImgPhoto src={Photo} height="230" />}
             </BlocoTextForm>
         </Container>
     )

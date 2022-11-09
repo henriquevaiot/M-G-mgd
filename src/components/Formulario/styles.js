@@ -13,6 +13,10 @@ export const BoxContato = styled.div`
 export const Title = styled.h1`
     font-family: Chapanza, serif;
     font-size: 109px;
+
+    @media (max-width: 600px) {
+        font-size: 70px
+    }
 `
 export const Description = styled.p`
     font-size: 18px;

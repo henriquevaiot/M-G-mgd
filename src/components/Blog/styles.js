@@ -48,7 +48,7 @@ export const Box1 = styled.div`
         display: flex;
         align-items: center;
         justify-content: end;
-}
+    }
 `
 export const Box2 = styled.div`
     background-image: url(${blog2});

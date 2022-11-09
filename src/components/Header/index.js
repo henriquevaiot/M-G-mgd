@@ -39,11 +39,11 @@ export default function Header() {
                 </LinkEmail>
             </ContainerLinks>
 
+            <ContainerNavHeader>
             <DivMm>
                 <LogoMM
                     src={logo} width="80%" />
             </DivMm>
-            <ContainerNavHeader>
 
                 <Tag href="/">
                     <Texto>HOME</Texto>

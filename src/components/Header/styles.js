@@ -3,8 +3,7 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-left: 150px;
-
+    margin-left: 1px;
     @media (max-width: 600px) {
         display: flex;
         align-items: center;
@@ -12,10 +11,8 @@ export const HeaderContainer = styled.div`
         align-items: center;
         flex-direction: column;
     }
-    
 `
 export const DivMm = styled.div`
-    margin-bottom: -30px;
 `
 export const LogoMM = styled.img`
     width: 200px;
@@ -67,23 +64,22 @@ export const ContainerNavHeader = styled.div`
     margin-top: -10px;
     position: relative;
     justify-content: center;
+    margin-top: 15px;
 
     @media (max-width: 600px) {   
         overflow-x: scroll;
         width: 100%;
+        margin-top: 15px;
     }  
-
-
 `
 export const ContainerLinks = styled.div`
     display: flex;
     justify-content: end;
     margin-top: 25px;
     margin-right: 18rem;
-/*     background-color: red; */
 
     @media (max-width: 600px) {      
-        margin-left: 50px;
+        margin-left: 76%;
     }
 `
 export const TextWpp = styled.text`

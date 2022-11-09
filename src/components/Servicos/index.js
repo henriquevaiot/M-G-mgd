@@ -43,7 +43,7 @@ export default function Servico() {
                         <p style={{
                             color: 'white',
                             fontSize: 15,
-                            marginTop: 70,
+                            marginTop: 60,
                             marginRight: 25,
                             fontWeight: 100,
                             }}>
@@ -166,7 +166,7 @@ export default function Servico() {
 
                     </ContainerTitle>
                     <BoxImg4 style={{display: 'flex', flexDirection: 'column'}}>
-                        <Description style={{ color: 'white', fontSize: 13, marginTop: 100 }}>
+                        <Description style={{ color: 'white', fontSize: 13, marginTop: 70 }}>
                             Com profissionais capacitados e <br/> 
                             instrumentos com tecnologia <br/>avançada realizamos o <br/>
                             balanceamo e <br/> comissionamento de novos <br/>

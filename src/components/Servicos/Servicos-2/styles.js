@@ -1,9 +1,22 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+
 `
 export const BlocoTextForm = styled.div`
     margin-top: -165px;
+
+    @media (max-width: 600px) {   
+        margin-top: -25px;
+    }
+`
+export const ImgPhoto = styled.img`
+    margin-left: 150px;
+    margin-top: 15px;
+
+    @media (max-width: 600px) {   
+        height: 1px;
+    }
 `
 export const Title = styled.p`
     color: #94C2E5;

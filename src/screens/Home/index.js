@@ -66,11 +66,12 @@ import Servico2 from '../../components/Servicos/Servicos-2/index'
 import Servico3 from '../../components/Servicos/Servicos-3/index'
 import QuemSomos from '../../components/QuemSomos'
 import CarrosselPortfolio from "components/Carrossel/CarrosselPortfolio";
+import Clientes from '../../components/Clientes'
+import Formulario from "components/Formulario";
 
 import line from '../../assets/line.png'
 import Youtube from '../../assets/youtube.png'
 import Banner from '../../assets/banner.png'
-import Formulario from "components/Formulario";
 import Depoimentos from "components/Depoimentos";
 import mpoc from '../../assets/mpoc.jpg'
 
@@ -154,7 +155,7 @@ export default function Home() {
                 </ContainerGlobalForm>
             </ContainerInform>
 
-                <QuemSomos />
+            <QuemSomos />
 
             <ContainerGaleria>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
@@ -177,7 +178,7 @@ export default function Home() {
                         ESPECIFICAÇÕES<br />
                         DOS SISTEMAS
                     </TitleEspecSistemas>
-                    {/*  <ContainerCircleTitle> 
+                     {/* <ContainerCircleTitle> 
                          <CircleDetail></CircleDetail>
                      </ContainerCircleTitle>  */}
                 </DivText>
@@ -300,7 +301,7 @@ export default function Home() {
                 </ContainerConteudoTexto>
             </ContainerSistem>
 
-             <ContainerServicos>
+            <ContainerServicos>
                 <DivTextTitle>
                     <EspecificacoesServico>ESPECIFICAÇÕES DO SERVIÇO</EspecificacoesServico>
                     <AlignItemsLocation>
@@ -318,40 +319,40 @@ export default function Home() {
                         </Tag>
                     </AlignItemsLocation>
                 </DivTextTitle>
-                 <Servico2 />
-            </ContainerServicos> 
-                {/* <Servico3/> */}
-                {/* <Servico /> */}
-               {/*  <Servico1 /> */}
+                {<Servico2 />}
+            </ContainerServicos>
+            {/* {<Servico />} */}
+            {/* <Servico3/> */}
+            {/*  <Servico1 /> */}
 
 
             <ContainerBalance>
                 <ContainerBalanceText>
                     <BoxBalance>
-                            <BalanceamentoText>MANUTENCAO E PMOC</BalanceamentoText>
-                            <DescriptionBalance>
-                                Disponibilizamos de ténicos capacitados a executar as atividades de <br />
-                                manutenção preventiva em conformidade com o PMOC e manutenção  <br />
-                                corretiva não programada  <br /> <br />
-                                Contamos com equipe de engenheiros capacitados para elaboração  <br />
-                                implantação e manuntenção de PMOC ( Plano de Manutenção. Operação  <br />
-                                e Controle), em conformidades com as premissas legais e normas  <br />
-                                vigentes para o sistema de ar condicionado, garantindo a qualidade dos  <br />
-                                sistemas e satisfação dos nossos clientes.  <br /> <br />
-                                Com plantões em periodos de 24 horas por dia, disponibilizarmos de  <br />
-                                técnicos e genheiros para execução de manuntenções, preventivas. <br /> <br />
-                                Manunteção preventiva <br />
-                                Manunteção corretiva <br />
-                                Manuntenção preditiva
-                            </DescriptionBalance>
+                        <BalanceamentoText>MANUTENCAO E PMOC</BalanceamentoText>
+                        <DescriptionBalance>
+                            Disponibilizamos de ténicos capacitados a executar as atividades de <br />
+                            manutenção preventiva em conformidade com o PMOC e manutenção  <br />
+                            corretiva não programada  <br /> <br />
+                            Contamos com equipe de engenheiros capacitados para elaboração  <br />
+                            implantação e manuntenção de PMOC ( Plano de Manutenção. Operação  <br />
+                            e Controle), em conformidades com as premissas legais e normas  <br />
+                            vigentes para o sistema de ar condicionado, garantindo a qualidade dos  <br />
+                            sistemas e satisfação dos nossos clientes.  <br /> <br />
+                            Com plantões em periodos de 24 horas por dia, disponibilizarmos de  <br />
+                            técnicos e genheiros para execução de manuntenções, preventivas. <br /> <br />
+                            Manunteção preventiva <br />
+                            Manunteção corretiva <br />
+                            Manuntenção preditiva
+                        </DescriptionBalance>
 
-                        {/* {<img style={{ marginTop: 15 }} src={mpoc} height="300" />} */}
+                        {/* <img style={{ marginTop: 15 }} src={mpoc} height="300" /> */}
                     </BoxBalance>
                 </ContainerBalanceText>
             </ContainerBalance>
 
 
-            {/* <ContainerCarrosselFound>
+            <ContainerCarrosselFound>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
                     <motion.div
                         drag="x"
@@ -364,7 +365,7 @@ export default function Home() {
                         ))}
                     </motion.div>
                 </motion.div>
-            </ContainerCarrosselFound> */}
+            </ContainerCarrosselFound>
 
             <ContainerPortfolio>
                 <CarrosselPortfolio />
@@ -379,20 +380,24 @@ export default function Home() {
                 <Depoimentos />
             </ContainerDepoimentos>
 
-            {/* <ContainerCarrosselFound>
+            <ContainerGaleria>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
                     <motion.div
                         drag="x"
                         className="inner"
                         dragConstraints={{ right: 0, left: width }}>
-                        {m.map(image => (
+                        {images.map(image => (
                             <motion.div className="item" key={image}>
                                 <img src={image} alt="texto alto" />
                             </motion.div>
                         ))}
                     </motion.div>
                 </motion.div>
-            </ContainerCarrosselFound> */}
+            </ContainerGaleria>
+
+            <Clientes />
+
+            <Formulario/>
         </Container>
     )
 }
