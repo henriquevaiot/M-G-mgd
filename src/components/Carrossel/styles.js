@@ -8,6 +8,14 @@ export const TitlePortfólio = styled.h1`
     height: 20px;
     width: 40%;
     margin-top: -1px;
+
+    @media screen and (max-width: 600px) {   
+        color: #000000;
+        font-family: Chapaza, serif;
+        font-size: 40px;
+        height: 20px;
+        margin-top: -1px;
+    }
 `
 export const ContainerBoxCarrosel = styled.div`
     width: 100%;

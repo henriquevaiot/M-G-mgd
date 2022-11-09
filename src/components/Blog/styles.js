@@ -21,11 +21,10 @@ export const ContainerBox = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-/*     background-color: red; */
     width: 100%;
 
-@media (max-width: 768) {
-    overflow-y: hidden;
+@media (max-width: 600px) {
+    flex-direction: column;
 }
 `
 export const BlogText = styled.h1`
@@ -35,12 +34,21 @@ export const BlogText = styled.h1`
 export const Box1 = styled.div`
     background-image: url(${blog1});
     height: 417px;
-    /* width: 461px; */
     margin-right: 15px;
     background-color: blue;
     display: flex;
     align-items: center;
     justify-content: end;
+
+    @media (min-width: 600px) {
+        background-image: url(${blog1});
+        /* height: 200px; */
+        margin-right: 15px;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+}
 `
 export const Box2 = styled.div`
     background-image: url(${blog2});

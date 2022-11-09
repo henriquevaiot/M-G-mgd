@@ -4,6 +4,7 @@ import {
     Container,
     Title,
     Bloco1,
+    Bloco2,
     HrLinha,
     Name,
     Description,
@@ -40,7 +41,7 @@ export default function Depoimentos() {
 
                 <HrLinha></HrLinha>
 
-                <Bloco1 style={{ marginLeft: 100 }}>
+                <Bloco2>
                     <Name>BRUNO RAMOS</Name>
                     <Description>
                         AMCOR
@@ -61,7 +62,7 @@ export default function Depoimentos() {
                             excelência."
                         </DescriptionCliente>
                     </BlocoResumo>
-                </Bloco1>
+                </Bloco2>
         </Container>
     )
 }

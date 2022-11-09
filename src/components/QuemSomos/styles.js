@@ -40,6 +40,8 @@ export const BoxSomos = styled.div`
 export const TituloQuemSomos = styled.p`
     color: #fff;
     font-size: 109px;
+    margin-left: 80px;
+    font-family: Chapanza;
 
     @media (max-width: 600px) {   
         font-size: 50px;

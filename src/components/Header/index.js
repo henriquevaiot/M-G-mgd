@@ -11,7 +11,12 @@ import {
     Teste,
     Tag,
     TextWpp,
-    TextEmail
+    TextEmail,
+    LogoMM,
+    ContainerMM,
+    DivMm,
+    TagQuemSOmos,
+    QuemSomos
 } from './styles'
 
 import logo from '../../assets/logo.png'
@@ -22,27 +27,32 @@ import email from '../../assets/email.png'
 export default function Header() {
     return (
         <HeaderContainer>
-            {/* <ContainerLinks>
-                    <LinkWpp>
-                            <img src={wpp} width="17%" />
-                        <TextWpp>Fale Cosnoco</TextWpp>
-                    </LinkWpp>
+            <ContainerLinks>
+                <LinkWpp>
+                    <img src={wpp} width="17%" />
+                    <TextWpp>Fale Cosnoco</TextWpp>
+                </LinkWpp>
 
-                    <LinkEmail>
-                        <img src={email} width="15%" />
-                        <TextEmail>Enviar Mensagem</TextEmail>
-                    </LinkEmail>
-                </ContainerLinks> */}
-            <ContainerNavHeader>
-                <img
+                <LinkEmail>
+                    <img src={email} width="15%" />
+                    <TextEmail>Enviar Mensagem</TextEmail>
+                </LinkEmail>
+            </ContainerLinks>
+
+            <DivMm>
+                <LogoMM
                     src={logo} width="80%" />
+            </DivMm>
+            <ContainerNavHeader>
 
                 <Tag href="/">
                     <Texto>HOME</Texto>
                 </Tag>
-                <Tag href="/">
-                    <Texto>QUEM SOMOS</Texto>
-                </Tag>
+                <QuemSomos>
+                    <Tag href="/">
+                        <Texto>QUEM SOMOS</Texto>
+                    </Tag>
+                </QuemSomos>
                 <Tag href="/">
                     <Texto>SISTEMAS</Texto>
                 </Tag>

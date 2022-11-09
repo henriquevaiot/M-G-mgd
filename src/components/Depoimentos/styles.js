@@ -5,6 +5,11 @@ export const Container = styled.div`
     flex-direction: row;
     margin-left: 96px;
     margin-top: 80px;
+
+    @media (max-width: 600px) {
+        display: flex;
+        /* flex-direction: column; */
+    }
 `
 export const HrLinha = styled.div`
     height: 370px;
@@ -21,16 +26,31 @@ export const Bloco1 = styled.div`
     width: 50%;
 `
 export const Bloco2 = styled.div`
-    width: 50%;
+    margin-left: 100px;
+
+    @media (max-width: 600px) {
+        margin-left: 1px;
+        margin-top: 70vh;
+    }
 `
 export const Name = styled.p`
     font-size: 50px;
     margin-top: -20px;
     font-family: LEMONMILK, sans-serif;
+
+    @media (max-width: 600px) {
+        font-size: 30px;
+        margin-top: -5px;
+    }
 `
 export const Description = styled.p`
     font-size: 30px;
     margin-top: -53px;
+
+    @media (max-width: 600px) {
+        font-size: 15px;
+        margin-top: -20px;
+    }
 `
 export const BlocoResumo = styled.div`
     width: 300px;

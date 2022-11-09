@@ -25,9 +25,9 @@ export const HomeContainer = styled.div`
 
     background-color: red;
 
-    @media screen and (max-width: 737){
+    /* @media screen and (max-width: 737){
         width: 60%;
-    }
+    } */
 `
 export const ContainerMovie = styled.div`
     height: 140vh;
@@ -41,8 +41,14 @@ export const ContainerMovie = styled.div`
     align-items: center;
 
     @media screen and (max-width: 600px){
-        height: 120px;
+        height: 300px;
     }
+`
+export const LogoMM = styled.img`
+        @media (max-width: 600px){
+            width: 350px;
+            margin-top: -45px;
+        }
 `
 export const BannerContainer = styled.div`
     display: flex;
@@ -116,8 +122,7 @@ export const BoxTitle = styled.div`
 export const ContSubscription = styled.div`
     height: 150px;
     width: 750px;
-    /* background-color: ${rgba('#fff', 0.6)}; */
-    background-color: red;
+    background-color: ${rgba('#fff', 0.6)};
     padding: 10px;
     display: flex;
     align-items: center;
@@ -210,6 +215,11 @@ export const TitleLogo = styled.p`
     font-weight: 900;
 
 `
+export const LogoYoutube = styled.img`
+    @media (max-width: 600px){
+        width: 100px;
+    }
+`
 export const DivHVAC = styled.div`
     height: 40px;
     width: 100px;
@@ -269,12 +279,8 @@ export const ContainerGaleria = styled.div`
 
     background-color: red;
 
-    @media (max-width: 600px) {   
-        margin: 0 auto;
-        min-height: 89vh;
-        display: flex;
-
-        background-color: green;
+    @media screen and (max-width: 600px) {   
+        height: 250px;
     }
 `
 export const BoxGaleria = styled.div`
@@ -305,9 +311,14 @@ export const ContainerSistem = styled.div`
     background-size: 100% auto;
     background-repeat: no-repeat;
 
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
         display: flex;
         flex-direction: column;
+  }
+`
+export const Linha = styled.img`
+    @media (max-width: 600px) {
+    height: 0;
   }
 `
 export const DivText = styled.div`
@@ -315,22 +326,22 @@ export const DivText = styled.div`
     flex-direction: row;
     align-items: center;
 
-    @media (max-width: 768px) {
-        margin-left: -110px;
-  }
 `
 export const ContALign = styled.div`
     display: flex;
-/*     flex-direction: column; */
 `
 export const ContainerConteudoTexto = styled.div`
     height: 1000px;
     margin-left: 10%;
-    @media (max-width: 768px) {
-    flex-direction: column;
-    display: flex;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 1;
+
+    @media (max-width: 600px) {
+        display: flex;
+        /* background-color: blue; */
+        flex-direction: column;
   }
-    /* background-color: red; */
 `
 export const Conteudo1 = styled.div`
     display: flex;
@@ -347,7 +358,7 @@ export const Conteudo1 = styled.div`
   }
 `
 export const DivConteudo1 = styled.div`
-    height: 357px;
+    /* height: 357px; */
     float: left;
     display: flex;
     flex-direction: row;
@@ -355,25 +366,40 @@ export const DivConteudo1 = styled.div`
     /* background-color: red; */
 
     @media (max-width: 600px) {   
-        height: 357px;
-        float: left;
-        display: flex;
-        flex-direction: row;
-
-        margin-right: 50px;
+        height: 10;
     }
 `
 export const Bloco = styled.div`
     width: 170px;
+`
+export const BlocoExaustao = styled.div`
+    /* margin-top: 110px; */
 
+    @media (max-width: 600px) {   
+        margin-top: 0px;
+    }
+`
+export const DivColumn = styled.div`
 
-    
+    @media (max-width: 600px) {   
+        width: 2px;
+    }
 `
 export const TitleConteudo = styled.p`
     height: 15px;
     font-size: 30px;
     font-weight: bold;
     font-family: LemonMilk;
+`
+export const TitleConteudoArcon = styled.p`
+    height: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: LemonMilk;
+
+    @media (max-width: 600px) {   
+        margin-top: 30px;
+    }
 `
 export const Description = styled.p`
     font-size: 20px;
@@ -397,27 +423,52 @@ export const ContainerServicos = styled.div`
 
     @media (max-width: 600px) {   
         background-size: 100% auto;
-        background-color: red;
+        /* background-color: red; */
+        margin-top: 200vh;
         background-repeat: no-repeat;
     }
 `
 export const BoxBalance = styled.div`
     height: 700px;
-    width: 700px;
 /*     background-color: red; */
     padding-top: 50px;
+
+    @media (max-width: 600px) {   
+        height: 700px;
+        padding-top: 1px;
+    }
 `
 export const ContainerBalance = styled.div`
-    width: 100%;
-    background-color: red;
+    background-color: green;
     margin-top: 10px;
     background-image: url(${bgBalance});
-    height: 852px;
+    /* height: 852px; */
     background-size: 100% auto;
     background-repeat: no-repeat;
+
+    @media (max-width: 600px) {   
+        background-size: 100% auto;
+        margin-top: -76vh;
+        background-repeat: no-repeat;
+        height: 30vh;
+    }
+`
+export const DescriptionBalance = styled.p`
+    color: #fff;
+    font-size: 25px;
+    @media (max-width: 600px) {   
+        color: #fff;
+        font-size: 8px;
+        margin-top: -10px;
+    }
+
 `
 export const ContainerBalanceText = styled.div`
     margin-left: 150px;
+
+    @media (max-width: 600px) {   
+        margin-left: 10px;
+    }
 `
 export const ContainerCarrosselFound = styled.div`
     width: 100%;
@@ -431,6 +482,7 @@ export const ContainerFormulário = styled.div`
 export const DivTextTitle = styled.div`
     /* background-color: red; */
     margin-left: 150px;
+    margin-top: -25px;
 
     @media (max-width: 600px) {   
         margin-left: 15px;
@@ -443,7 +495,7 @@ export const EspecificacoesServico = styled.h1`
 
     @media (max-width: 600px) {   
         color: #fff;
-        font-size: 23px;
+        font-size: 20px;
         font-family: Chapanza;
     }
 `
@@ -451,18 +503,16 @@ export const TitleEspecSistemas = styled.h1`
     font-size: 109px;
     color: #000000;
     font-family: Chapaza, serif;
-    line-height: 74px;
+    line-height: 94px;
     margin-left: 150px;
     margin-top: 150px;
-
-    background-color: red;
-
     @media (max-width: 600px) {
         font-size: 30px;
         color: #000000;
         font-family: Chapaza, serif;
-        background-color: blue;
-        line-height: 74px;
+        line-height: 40px;
+
+        margin-top: -20px;
   }
 `
 export const BlogText = styled.p``
@@ -470,6 +520,12 @@ export const BalanceamentoText = styled.h1`
     color: #fff;
     font-size: 47px;
     font-family: LEMONMILK, sans-serif;
+
+    @media (max-width: 600px) {
+    color: #fff;
+    font-size: 27px;
+    font-family: LEMONMILK, sans-serif;
+}
 `
 export const ColumPhotosCarrosel = styled.div`
     height: 375px;
@@ -576,8 +632,15 @@ export const AlignItemsLocation = styled.div`
 `
 export const ContainerBlog = styled.div``
 export const ContainerDepoimentos = styled.div``
+
 export const TitleDepoimentos = styled.h1`
     font-family: Chapanza;
     margin-left: 90px;
     font-size: 83px;
+
+    @media (max-width: 600px) {
+        font-family: Chapanza;
+        margin-left: 10px;
+        font-size: 30px;
+}
 `

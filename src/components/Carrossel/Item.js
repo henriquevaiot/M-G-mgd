@@ -18,6 +18,9 @@ export default styled.div`
   font-size: 4em;
   margin-top: 30px;
 `;
+export const DivTitle = styled.div`
+  margin-left: -60px;
+`
 export const Item1 = styled.div`
   display: flex;
   justify-content: center;

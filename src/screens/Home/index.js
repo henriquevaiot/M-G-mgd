@@ -46,7 +46,13 @@ import {
     EspecificacoesServico,
     ContainerBlog,
     ContainerDepoimentos,
-    TitleDepoimentos
+    TitleDepoimentos,
+    LogoMM,
+    LogoYoutube,
+    Linha,
+    BlocoExaustao,
+    TitleConteudoArcon,
+    DescriptionBalance
 } from './styles'
 
 import './App.css'
@@ -97,9 +103,9 @@ export default function Home() {
         <Container>
 
             <HomeContainer>
-                {/* <Header /> */}
+                {<Header />}
                 <BannerContainer>
-                    <img width="50%" src={Banner} />
+                    <LogoMM width="50%" src={Banner} />
                 </BannerContainer>
                 <ContabainerCircle>
                     <Circle>
@@ -115,7 +121,7 @@ export default function Home() {
 
             <ContainerMovie>
                 <a target="_blank" href="https://www.youtube.com/watch?v=xcJtL7QggTI">
-                    <img src={Youtube} width="90%" />
+                    <LogoYoutube src={Youtube} width="90%" />
                 </a>
             </ContainerMovie>
 
@@ -150,7 +156,7 @@ export default function Home() {
 
                 <QuemSomos />
 
-            {/* <ContainerGaleria>
+            <ContainerGaleria>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
                     <motion.div
                         drag="x"
@@ -163,19 +169,19 @@ export default function Home() {
                         ))}
                     </motion.div>
                 </motion.div>
-            </ContainerGaleria> */}
+            </ContainerGaleria>
 
-           {/*  <ContainerSistem>
+            <ContainerSistem>
                 <DivText>
                     <TitleEspecSistemas>
                         ESPECIFICAÇÕES<br />
                         DOS SISTEMAS
                     </TitleEspecSistemas>
-                    <ContainerCircleTitle>
-                        <CircleDetail></CircleDetail>
-                    </ContainerCircleTitle>
+                    {/*  <ContainerCircleTitle> 
+                         <CircleDetail></CircleDetail>
+                     </ContainerCircleTitle>  */}
                 </DivText>
-                <ContainerConteudoTexto style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 1 }}>
+                <ContainerConteudoTexto>
                     <div className="divColumn" style={{ width: 190 }}>
                         <DivConteudo1>
                             <Bloco>
@@ -184,7 +190,7 @@ export default function Home() {
                                     Sistema utilizado para<br /> distribuição de ar para<br /> os ambientes, de<br /> acordo com a pressão<br /> e vazão determinado em<br /> projeto</Description>
                             </Bloco>
                             <BlocoImg>
-                                <img style={{ marginLeft: 60 }} src={line} height="350" />
+                                <Linha style={{ marginLeft: 60 }} src={line} height="350" />
                             </BlocoImg>
                         </DivConteudo1>
                         <DivConteudo1>
@@ -206,7 +212,7 @@ export default function Home() {
                                     elementos filtrantes.</Description>
                             </Bloco>
                             <BlocoImg>
-                                <img style={{ marginLeft: 60 }} src={line} height="350" />
+                                <Linha style={{ marginLeft: 60 }} src={line} height="350" />
                             </BlocoImg>
                         </DivConteudo1>
 
@@ -215,7 +221,7 @@ export default function Home() {
                         <DivConteudo1>
                             <Bloco>
                                 <Description style={{ width: 230 }}>
-                                    <TitleConteudo>ARCONDICIONDO</TitleConteudo>
+                                    <TitleConteudoArcon>ARCONDICIONDO</TitleConteudoArcon>
                                     Sistema utilizado para<br /> o
                                     tratamento do ar no<br />
                                     interior de espaços<br />
@@ -239,7 +245,7 @@ export default function Home() {
                                     resfriamentos.</Description>
                             </Bloco>
                             <BlocoImg>
-                                <img style={{ marginLeft: 100 }} src={line} height="350" />
+                                <Linha style={{ marginLeft: 100 }} src={line} height="350" />
                             </BlocoImg>
                         </DivConteudo1>
                     </div>
@@ -262,11 +268,11 @@ export default function Home() {
                                 </Description>
                             </Bloco>
                             <BlocoImg>
-                                <img style={{ marginLeft: 80 }} src={line} height="350" />
+                                <Linha style={{ marginLeft: 80 }} src={line} height="350" />
                             </BlocoImg>
                         </DivConteudo1>
                         <DivConteudo1>
-                            <Bloco style={{ marginTop: 110 }}>
+                            <BlocoExaustao>
                                 <Description>
                                     <TitleConteudo>EXAUSTAO</TitleConteudo>
                                     Sistema utilizado para<br />
@@ -285,16 +291,16 @@ export default function Home() {
                                     (ventiladores), grelhas,<br />
                                     coifas, dampers e<br />
                                     elementos filtrantes.</Description>
-                            </Bloco>
+                            </BlocoExaustao>
                             <BlocoImg>
-                                <img style={{ marginLeft: 80 }} src={line} height="350" />
+                                <Linha style={{ marginLeft: 27 }} src={line} height="350" />
                             </BlocoImg>
                         </DivConteudo1>
                     </div>
                 </ContainerConteudoTexto>
-            </ContainerSistem> */}
+            </ContainerSistem>
 
-            <ContainerServicos>
+             <ContainerServicos>
                 <DivTextTitle>
                     <EspecificacoesServico>ESPECIFICAÇÕES DO SERVIÇO</EspecificacoesServico>
                     <AlignItemsLocation>
@@ -313,18 +319,17 @@ export default function Home() {
                     </AlignItemsLocation>
                 </DivTextTitle>
                  <Servico2 />
-            </ContainerServicos>
+            </ContainerServicos> 
                 {/* <Servico3/> */}
                 {/* <Servico /> */}
                {/*  <Servico1 /> */}
 
 
-            {/* <ContainerBalance>
+            <ContainerBalance>
                 <ContainerBalanceText>
                     <BoxBalance>
-                        <div>
                             <BalanceamentoText>MANUTENCAO E PMOC</BalanceamentoText>
-                            <p style={{ color: '#fff' }}>
+                            <DescriptionBalance>
                                 Disponibilizamos de ténicos capacitados a executar as atividades de <br />
                                 manutenção preventiva em conformidade com o PMOC e manutenção  <br />
                                 corretiva não programada  <br /> <br />
@@ -338,13 +343,12 @@ export default function Home() {
                                 Manunteção preventiva <br />
                                 Manunteção corretiva <br />
                                 Manuntenção preditiva
-                            </p>
-                        </div>
+                            </DescriptionBalance>
 
-                        <img style={{ marginTop: 15 }} src={mpoc} height="300" />
+                        {/* {<img style={{ marginTop: 15 }} src={mpoc} height="300" />} */}
                     </BoxBalance>
                 </ContainerBalanceText>
-            </ContainerBalance> */}
+            </ContainerBalance>
 
 
             {/* <ContainerCarrosselFound>
@@ -362,7 +366,7 @@ export default function Home() {
                 </motion.div>
             </ContainerCarrosselFound> */}
 
-            {/* <ContainerPortfolio>
+            <ContainerPortfolio>
                 <CarrosselPortfolio />
             </ContainerPortfolio>
 
@@ -375,7 +379,7 @@ export default function Home() {
                 <Depoimentos />
             </ContainerDepoimentos>
 
-            <ContainerCarrosselFound>
+            {/* <ContainerCarrosselFound>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
                     <motion.div
                         drag="x"

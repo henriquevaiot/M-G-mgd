@@ -6,7 +6,8 @@ import {
   Item2,
   Item3,
   Item4,
-  Item5
+  Item5,
+  DivTitle
 } from './Item'
 
 import {ContainerBoxCarrosel, TitlePortfólio} from './styles'
@@ -21,7 +22,9 @@ const breakPoints = [
 function CarrosselPortfolio() {
   return (
     <>
+    <DivTitle>
       <TitlePortfólio>Portfólio</TitlePortfólio>
+    </DivTitle>
       <ContainerBoxCarrosel>
         <div className="App">
           <Carousel breakPoints={breakPoints}>
