@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     HeaderContainer,
     Texto,
@@ -16,15 +16,19 @@ import {
     ContainerMM,
     DivMm,
     TagQuemSOmos,
-    QuemSomos
+    QuemSomos,
+    TextoLi,
+    LiListServicos
 } from './styles'
 
 import logo from '../../assets/logo.png'
 import wpp from '../../assets/wpp.png'
 import email from '../../assets/email.png'
 
-
 export default function Header() {
+
+    const [mouseOver, setMouseOver] = useState(false)
+
     return (
         <HeaderContainer>
             <ContainerLinks>
@@ -40,10 +44,30 @@ export default function Header() {
             </ContainerLinks>
 
             <ContainerNavHeader>
-            <DivMm>
-                <LogoMM
-                    src={logo} width="80%" />
-            </DivMm>
+                <DivMm>
+                    <LogoMM
+                        src={logo} width="80%" />
+                </DivMm>
+
+                {/* <ul>
+                    <li>HOME</li>
+                    <li>QUEM SOMOS</li>
+                    <li>SISTEMA</li>
+                    <li onMouseOver={() => setMouseOver(true)} onMouseOut={() => setMouseOver(false)}>
+                        <span>SERVIÇOS</span>
+                        {mouseOver && (
+                            <ul>
+                                <li>ENGENHARIA E PROJETOS</li>
+                                <li>FABRICAÇÃO E MONTAGEM DE DUTOS</li>
+                                <li>INSTAÇÃO E RETROFIT</li>
+                                <li>BALANCEAMENTO E COMISSIONAMENTO</li>
+                            </ul>
+                        )}
+                    </li>
+                    <li>PORTFÓLIO</li>
+                    <li>BLOG</li>
+                    <li>CONTATO</li>
+                </ul> */}
 
                 <Tag href="/">
                     <Texto>HOME</Texto>
@@ -57,7 +81,17 @@ export default function Header() {
                     <Texto>SISTEMAS</Texto>
                 </Tag>
                 <Tag href="/">
-                    <Texto>SERVIÇO</Texto>
+                    <TextoLi onMouseOver={() => setMouseOver(true)} onMouseOut={() => setMouseOver(false)}>
+                        <Texto>SISTEMAS</Texto>
+                        {mouseOver && (
+                            <ul>
+                                <LiListServicos>ENGENHARIA E PROJETOS</LiListServicos>
+                                <LiListServicos>FABRICAÇÃO E MONTAGEM DE DUTOS</LiListServicos>
+                                <LiListServicos>INSTAÇÃO E RETROFIT</LiListServicos>
+                                <LiListServicos>BALANCEAMENTO E COMISSIONAMENTO</LiListServicos>
+                            </ul>
+                        )}
+                    </TextoLi>
                 </Tag>
                 <Tag href="/">
                     <Texto>PORTIFÓLIO</Texto>

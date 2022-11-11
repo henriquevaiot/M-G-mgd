@@ -97,8 +97,6 @@ export default function Home() {
     const carousel = useRef()
     const [width, setWidth] = useState(0)
 
-    const [showDiv, setShowDiv] = useState(true)
-
     useEffect(() => {
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
     }, []);

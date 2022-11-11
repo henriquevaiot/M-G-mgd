@@ -12,6 +12,21 @@ export const HeaderContainer = styled.div`
       
     }
 `
+export const TextoLi = styled.li`
+    list-style: none;
+`
+export const LiListServicos = styled.li`
+    color: #fff;
+    font-size: 13px;
+
+    &:hover, 
+    &:focus {
+        color: #C99C1E;
+    }
+    &:active {
+        color: #C99C1E;
+    }
+`
 export const DivMm = styled.div`
 `
 export const LogoMM = styled.img`
