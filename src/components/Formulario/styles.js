@@ -4,20 +4,31 @@ export const Container = styled.div``
 export const BoxFormulario = styled.div`
     display: flex;
     flex-direction: row;
+    margin-bottom: 30px;
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+    }
 `
 export const BoxContato = styled.div`
     /* background-color: yellow; */
     width: 45%;
     padding-left: 9%;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+
 `
 export const Title = styled.h1`
     font-family: Chapanza, serif;
     font-size: 109px;
 
     @media (max-width: 600px) {
-        font-size: 70px
+        font-size: 5vh;
     }
 `
+
 export const Description = styled.p`
     font-size: 18px;
     margin-top: -50;
@@ -26,7 +37,23 @@ export const Description = styled.p`
 export const ContainerContato = styled.div`
     height: 120px;
     width: 300px;
+   
+    @media (max-width: 600px) {
+        margin-botton:10px;
+    }
 `
+
+export const boxTitulo = styled.div`  
+
+    marginTop: -60;
+
+    @media (max-width: 600px) {
+        margin-top:-30vh;
+        
+    }
+`
+
+
 export const ContainerEmail = styled.div`
     height: 60px;
     width: 300px;
@@ -50,6 +77,10 @@ export const TitleForm = styled.h1`
 `
 export const ContForm = styled.div`
     width: 50%;
+    @media (max-width: 600px) {   
+       display:none;
+    }
+
 /*     background-color: red; */
 `
 export const Input = styled.input`

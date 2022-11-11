@@ -54,8 +54,18 @@ export const Description = styled.p`
 `
 export const BlocoResumo = styled.div`
     width: 300px;
+
+    @media (max-width: 600px) {
+        width: 160px;
+        /* background-color: red; */
+    }
 `
 export const DescriptionCliente = styled.p`
     color: #ccc;
     font-size: 25px;
+
+    @media (max-width: 600px) {
+        color: #ccc;
+        font-size: 19px;
+    }
 `

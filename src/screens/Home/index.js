@@ -52,7 +52,8 @@ import {
     Linha,
     BlocoExaustao,
     TitleConteudoArcon,
-    DescriptionBalance
+    DescriptionBalance,
+    ButtonEspecificacoes
 } from './styles'
 
 import './App.css'
@@ -95,6 +96,8 @@ export default function Home() {
 
     const carousel = useRef()
     const [width, setWidth] = useState(0)
+
+    const [showDiv, setShowDiv] = useState(true)
 
     useEffect(() => {
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
@@ -178,7 +181,7 @@ export default function Home() {
                         ESPECIFICAÇÕES<br />
                         DOS SISTEMAS
                     </TitleEspecSistemas>
-                     {/* <ContainerCircleTitle> 
+                    {/* <ContainerCircleTitle> 
                          <CircleDetail></CircleDetail>
                      </ContainerCircleTitle>  */}
                 </DivText>
@@ -305,7 +308,7 @@ export default function Home() {
                 <DivTextTitle>
                     <EspecificacoesServico>ESPECIFICAÇÕES DO SERVIÇO</EspecificacoesServico>
                     <AlignItemsLocation>
-                        <Tag href="/">
+                        <Tag>
                             <Texto>ENGENHARIA E PROJETOS</Texto>
                         </Tag>
                         <Tag style={{ marginLeft: 20 }} href="/">
@@ -319,7 +322,7 @@ export default function Home() {
                         </Tag>
                     </AlignItemsLocation>
                 </DivTextTitle>
-                {<Servico2 />}
+                <Servico2 />
             </ContainerServicos>
             {/* {<Servico />} */}
             {/* <Servico3/> */}
@@ -397,7 +400,7 @@ export default function Home() {
 
             <Clientes />
 
-            <Formulario/>
+            {<Formulario />}
         </Container>
     )
 }

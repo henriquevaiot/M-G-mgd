@@ -609,6 +609,8 @@ export const Tag = styled.a`
     font-size: 10px;
   }
 `
+export const ButtonEspecificacoes = styled.button`
+    border: none;`
 export const Texto = styled.p`
 color: #fff;
 margin-top: -80px;
@@ -633,7 +635,9 @@ export const AlignItemsLocation = styled.div`
     display: flex;
 `
 export const ContainerBlog = styled.div``
-export const ContainerDepoimentos = styled.div``
+export const ContainerDepoimentos = styled.div`
+    
+`
 
 export const TitleDepoimentos = styled.h1`
     font-family: Chapanza;

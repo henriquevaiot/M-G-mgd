@@ -23,7 +23,8 @@ export default function Formulario() {
             <BoxFormulario>
                 <BoxContato>
                     <Title>Contato</Title>
-                    <div style={{ marginTop: -60 }}>
+                    <boxTitulo>
+                    <div style={{  }}>
                         <p>
                             Com nossos anos de experiência e conhecimento, sabemos<br/> como criar soluções que funcionam para você e sua<br/> empresa. Seja uma loja ou uma grande fábrica.
                         </p>
@@ -40,6 +41,7 @@ export default function Formulario() {
                             Se você precisa de ar-condicionado de alta qualidade,<br/>fale conosco.
                         </p>
                     </div>
+                    </boxTitulo>
                     <ContainerContato>
                         <p style={{ fontWeight: 'bold', fontFamily: 'unset' }}>SE PREFERIR, LIGUE PARA:</p>
                         <p>São Paulo</p>

@@ -9,7 +9,7 @@ export const HeaderContainer = styled.div`
         align-items: center;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+      
     }
 `
 export const DivMm = styled.div`
@@ -39,10 +39,15 @@ export const QuemSomos = styled.div`
 export const Texto = styled(Tag)`
     color: #fff;
     margin: 20px;
-    font-size: 23px;
+    font-size: 1.6vw;
     font-weight: 700;
     white-space: nowrap;
     
+    @media (max-width: 1038px) {   
+        font-size: 1.40vw;
+        justify-content: center;
+    }
+
     @media (max-width: 600px) {   
         font-size: 13px;
         justify-content: center;
@@ -65,7 +70,7 @@ export const ContainerNavHeader = styled.div`
     position: relative;
     justify-content: center;
     margin-top: 15px;
-
+    
     @media (max-width: 600px) {   
         overflow-x: scroll;
         width: 100%;

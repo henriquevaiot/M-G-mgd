@@ -17,8 +17,10 @@ export const ContainerQuemSomos = styled.div`
         background-size: 250% auto;
         margin-top: -15px;
         height: 292px;
-        background-color: green;
+        --background-color: green;
         background-repeat: no-repeat;
+        overflow-y: auto;
+
     }
 `
 
@@ -33,7 +35,8 @@ export const BoxSomos = styled.div`
     margin-top: -95px;
 
     @media (max-width: 600px) {   
-        margin-top: -60px;
+        margin-top: -40px;
+        
     }
 
 `
@@ -44,7 +47,8 @@ export const TituloQuemSomos = styled.p`
     font-family: Chapanza;
 
     @media (max-width: 600px) {   
-        font-size: 50px;
+        font-size: 8vw;
+        margin-top:50px;
         margin-left: 20px;
         font-family: Chapanza;
     }
@@ -54,7 +58,7 @@ export const SubTitle = styled.h2`
     font-family: Chapanza;
 
     @media (max-width: 600px) {   
-        font-size: 20px;
+        font-size: 5vw;
         color: #fff;
         font-family: Chapaza, serif;
     }
@@ -68,6 +72,8 @@ export const Description = styled.p`
         color: #fff;
         margin-top: -45px;
         margin-left: 20px;
-        font-size: 8px;
+        font-size: 3.5vw;
+       
+
     }
 `
