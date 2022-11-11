@@ -97,9 +97,16 @@ export default function Home() {
     const carousel = useRef()
     const [width, setWidth] = useState(0)
 
+    const [pressed, setPressed] = useState(0)
+
     useEffect(() => {
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
     }, []);
+
+
+    function handleServicos(){
+        setPressed(1)
+    }
 
     return (
         <Container>
@@ -306,23 +313,27 @@ export default function Home() {
                 <DivTextTitle>
                     <EspecificacoesServico>ESPECIFICAÇÕES DO SERVIÇO</EspecificacoesServico>
                     <AlignItemsLocation>
-                        <Tag>
+                        <Tag style={{cursor: 'pointer'}} onClick={handleServicos}>
                             <Texto>ENGENHARIA E PROJETOS</Texto>
                         </Tag>
-                        <Tag style={{ marginLeft: 20 }} href="/">
+                        <Tag style={{ marginLeft: 20 }}>
                             <Texto>FABRICAÇÃO E MONTAGEM DE DUTOS</Texto>
                         </Tag>
-                        <Tag style={{ marginLeft: 20 }} href="/">
+                        <Tag style={{ marginLeft: 20 }}>
                             <Texto>INSTAÇÃO E RETROFIT</Texto>
                         </Tag>
-                        <Tag style={{ marginLeft: 20 }} href="/">
+                        <Tag style={{ marginLeft: 20 }}>
                             <Texto>BALANCEAMENTO E COMISSIONAMENTO</Texto>
                         </Tag>
                     </AlignItemsLocation>
                 </DivTextTitle>
-                <Servico2 />
+                {pressed === 0 ? (
+                    <Servico2 />
+                ) : (
+                    <Servico1 />
+                )}
             </ContainerServicos>
-            {/* {<Servico />} */}
+            {/* <Servico2 /> */}
             {/* <Servico3/> */}
             {/*  <Servico1 /> */}
 
