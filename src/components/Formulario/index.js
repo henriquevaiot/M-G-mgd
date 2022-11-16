@@ -14,7 +14,8 @@ import {
     ContForm,
     Input,
     ButtonEnviar,
-    Enviar
+    Enviar,
+    DescriptionP
 } from './styles'
 
 export default function Formulario() {
@@ -24,39 +25,37 @@ export default function Formulario() {
                 <BoxContato>
                     <Title>Contato</Title>
                     <boxTitulo>
-                    <div style={{  }}>
-                        <p>
+                        <DescriptionP>
                             Com nossos anos de experiência e conhecimento, sabemos<br/> como criar soluções que funcionam para você e sua<br/> empresa. Seja uma loja ou uma grande fábrica.
-                        </p>
-                        <p>
+                        </DescriptionP>
+                        <DescriptionP>
                             Temos a experiência que você precisa para garantir que seu<br/> projeto de ar-condicionado seja feito corretamente.
-                        </p>
-                        <p>
+                        </DescriptionP>
+                        <DescriptionP>
                             Operamos a mais de 7 anos no mercado, oferecendo<br/> serviços de alta qualidade para todo o Brasil
-                        </p>
-                        <p>
+                        </DescriptionP>
+                        <DescriptionP>
                             Somos licenciados, segurados e nossos técnicos são<br/> certificados em HVAC.
-                        </p>
-                        <p>
+                        </DescriptionP>
+                        <DescriptionP>
                             Se você precisa de ar-condicionado de alta qualidade,<br/>fale conosco.
-                        </p>
-                    </div>
+                        </DescriptionP>
                     </boxTitulo>
                     <ContainerContato>
                         <p style={{ fontWeight: 'bold', fontFamily: 'unset' }}>SE PREFERIR, LIGUE PARA:</p>
-                        <p>São Paulo</p>
-                        <p style={{ marginTop: -15 }}>11 00000000</p>
-                        <p style={{ marginTop: -15 }}>11 00000000</p>
-                        <p style={{ marginTop: -15 }}>11 00000000</p>
+                        <DescriptionP style={{fontWeight: 'bold'}}>São Paulo</DescriptionP>
+                        <DescriptionP style={{ marginTop: -15 }}>11 00000000</DescriptionP>
+                        <DescriptionP style={{ marginTop: -15 }}>11 00000000</DescriptionP>
+                        <DescriptionP style={{ marginTop: -15 }}>11 00000000</DescriptionP>
                     </ContainerContato>
                     <ContainerEmail>
                         <p style={{ fontSize: 14 }}>OU ENVIE UM E-MAIL PARA:</p>
-                        <p style={{ marginTop: -15 }}>email@email.com</p>
-                        <p style={{ marginTop: -15 }}>email@email.com</p>
+                        <DescriptionP style={{ marginTop: -15 }}>email@email.com</DescriptionP>
+                        <DescriptionP style={{ marginTop: -15 }}>email@email.com</DescriptionP>
                     </ContainerEmail>
                     <ContainerEndereco>
-                        <p style={{ fontWeight: 'bold' }}>SÃO PAULO</p>
-                        <p style={{ marginTop: -15 }}>Rua: Felipe tena 207 - Cotia - SP</p>
+                        <DescriptionP style={{ fontWeight: 'bold' }}>SÃO PAULO</DescriptionP>
+                        <DescriptionP style={{ marginTop: -15 }}>Rua: Felipe tena 207 - Cotia - SP</DescriptionP>
                     </ContainerEndereco>
                 </BoxContato>
                 <ContForm>

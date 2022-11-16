@@ -135,6 +135,7 @@ export const ContSubscription = styled.div`
 export const ContDescription1 = styled.p`
     font-size: 23px;
     margin-left: 20px;
+    font-family: Umumu;
 
     @media (max-width: 600px) {   
         font-size: 15px;
@@ -162,7 +163,7 @@ export const ContAndText = styled.p`
     font-size: 37px;
     text-align: end;
     margin-right: 100px;
-
+    font-family: Umumu;
     @media (max-width: 600px) {   
         font-size: 20px;
         text-align: end;
@@ -396,6 +397,7 @@ export const TitleConteudoArcon = styled.p`
 export const Description = styled.p`
     font-size: 20px;
     width: 230px;
+    font-family: Umumu;
 `
 export const BlocoImg = styled.div`
     float: left;
@@ -447,13 +449,18 @@ export const ContainerBalance = styled.div`
 `
 export const DescriptionBalance = styled.p`
     color: #fff;
-    font-size: 25px;
+    font-size: 18px;
+    font-family: Umumu;
     @media (max-width: 600px) {   
         color: #fff;
         font-size: 8px;
         margin-top: -10px;
     }
-
+`
+export const ImageMpoc = styled.img`
+    @media (max-width: 600px) {   
+        display: none;
+    }
 `
 export const ContainerBalanceText = styled.div`
     margin-left: 150px;
@@ -515,7 +522,7 @@ export const TitleEspecSistemas = styled.h1`
 export const BlogText = styled.p``
 export const BalanceamentoText = styled.h1`
     color: #fff;
-    font-size: 47px;
+    font-size: 40px;
     font-family: LEMONMILK, sans-serif;
 
     @media (max-width: 600px) {

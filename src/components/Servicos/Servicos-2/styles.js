@@ -73,6 +73,7 @@ export const Description1 = styled.p`
     font-weight: 300;
     margin-left: 150px;
     margin-top: -100px;
+    font-family: Umumu;
 
     @media (max-width: 600px) {   
         color: #ccc;
@@ -86,6 +87,7 @@ export const Description = styled.p`
     color: #ccc;
     font-weight: 300;
     margin-left: 150px;
+    font-family: Umumu;
 
     @media (max-width: 600px) {   
         color: #ccc;

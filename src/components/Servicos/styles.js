@@ -127,6 +127,7 @@ export const Title = styled.p`
     }
 `
 export const Description = styled.p`
+    
      @media (max-width: 600px) {   
         display: none;
     }

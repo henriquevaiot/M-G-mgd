@@ -22,6 +22,7 @@ export const Description = styled.p`
     color: #fff;
     font-weight: 300;
     margin-left: 150px;
+    font-family: Umumu;
     @media (max-width: 600px) {   
         color: #fff;
         font-weight: 300px;

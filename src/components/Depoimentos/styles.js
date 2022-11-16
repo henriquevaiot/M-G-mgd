@@ -63,7 +63,7 @@ export const BlocoResumo = styled.div`
 export const DescriptionCliente = styled.p`
     color: #ccc;
     font-size: 25px;
-
+    font-family: Umumu;
     @media (max-width: 600px) {
         color: #ccc;
         font-size: 19px;

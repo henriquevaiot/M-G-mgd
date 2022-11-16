@@ -42,14 +42,13 @@ export const ContainerContato = styled.div`
         margin-botton:10px;
     }
 `
-
+export const DescriptionP = styled.p`
+    color: #000000;
+    font-family: Umumu;
+`
 export const boxTitulo = styled.div`  
-
-    marginTop: -60;
-
     @media (max-width: 600px) {
         margin-top:-30vh;
-        
     }
 `
 

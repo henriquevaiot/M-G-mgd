@@ -53,6 +53,7 @@ import {
     BlocoExaustao,
     TitleConteudoArcon,
     DescriptionBalance,
+    ImageMpoc,
     ButtonEspecificacoes
 } from './styles'
 
@@ -62,6 +63,7 @@ import { motion } from 'framer-motion'
 
 import Blog from '../../components/Blog'
 import Servico from '../../components/Servicos'
+import Servico0 from '../../components/Servicos/Servicos-0/index'
 import Servico1 from '../../components/Servicos/Servicos-1/index'
 import Servico2 from '../../components/Servicos/Servicos-2/index'
 import Servico3 from '../../components/Servicos/Servicos-3/index'
@@ -76,17 +78,17 @@ import Banner from '../../assets/banner.png'
 import Depoimentos from "components/Depoimentos";
 import mpoc from '../../assets/mpoc.jpg'
 
-import pessoa from '../../assets/pessoa.jpg'
-import pessoa1 from '../../assets/pessoa1.jpg'
-import pessoa2 from '../../assets/pessoa2.jpg'
+import pessoa from '../../assets/depoimentos/pessoa.png'
+import pessoa1 from '../../assets/depoimentos/pessoa1.png'
+import pessoa2 from '../../assets/depoimentos/pessoa2.png'
 
 import p1 from '../../assets/p1.jpg'
 import p2 from '../../assets/p2.jpg'
 import p3 from '../../assets/p3.jpg'
 
-import m1 from '../../assets/m1.jpg'
-import m2 from '../../assets/m2.jpg'
-import m3 from '../../assets/m3.jpg'
+import m1 from '../../assets/carrossel/pessoa.png'
+import m2 from '../../assets/carrossel/pessoa1.png'
+import m3 from '../../assets/carrossel/pessoa2.png'
 import { render } from "@testing-library/react";
 
 const images = [pessoa1, pessoa, pessoa2]
@@ -98,7 +100,8 @@ export default function Home() {
     const carousel = useRef()
     const [width, setWidth] = useState(0)
 
-    const [pressed, setPressed] = useState('firstComponent')
+    const [pressedServico, setPressedServico] = useState(0)
+    const [pressed, setPressed] = useState('')
 
     useEffect(() => {
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
@@ -323,7 +326,8 @@ export default function Home() {
                         </Tag>
                     </AlignItemsLocation>
                 </DivTextTitle>
-                {pressed === 'firstComponent' && <Servico />}
+                {pressed === '' && <Servico />}
+                {pressed === 'firstComponent' && <Servico0 />}
                 {pressed === 'secondComponent' && <Servico1 />}
                 {pressed === 'threeComponent' && <Servico2/>}
                 {pressed === 'fourComponent' && <Servico3 />}
@@ -353,7 +357,7 @@ export default function Home() {
                             Manuntenção preditiva
                         </DescriptionBalance>
 
-                        {/* <img style={{ marginTop: 15 }} src={mpoc} height="300" /> */}
+                        <ImageMpoc src={mpoc} height="230" />
                     </BoxBalance>
                 </ContainerBalanceText>
             </ContainerBalance>
@@ -366,7 +370,7 @@ export default function Home() {
                         className="inner"
                         dragConstraints={{ right: 0, left: width }}>
                         {m.map(image => (
-                            <motion.div className="item" key={image}>
+                            <motion.div className="item" key={images}>
                                 <img src={image} alt="texto alto" />
                             </motion.div>
                         ))}

@@ -9,7 +9,7 @@ import {
     BgImage
 } from './styles'
 
-import Photo from '../../../assets/balanceamento.jpg'
+import Photo from '../../../assets/computador.png'
 
 export default function Servico() {
     return (

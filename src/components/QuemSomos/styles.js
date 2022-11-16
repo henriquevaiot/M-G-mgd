@@ -44,7 +44,6 @@ export const TituloQuemSomos = styled.p`
     font-size: 109px;
     margin-left: 80px;
     font-family: Chapanza;
-
     @media (max-width: 600px) {   
         font-size: 8vw;
         margin-top:50px;
@@ -54,7 +53,7 @@ export const TituloQuemSomos = styled.p`
 `
 export const SubTitle = styled.h2`
     color: #fff;
-    font-family: Chapanza;
+    font-family: LemonRegular;
 
     @media (max-width: 600px) {   
         font-size: 5vw;
@@ -66,13 +65,12 @@ export const Description = styled.p`
     color: #fff;
     margin-top: -110px;
     margin-left: 90px;
+    font-family: Umumu;
 
     @media (max-width: 600px) {   
         color: #fff;
         margin-top: -45px;
         margin-left: 20px;
         font-size: 3.5vw;
-       
-
     }
 `
