@@ -19,7 +19,7 @@ export const Container = styled.div`
 `
 export const HomeContainer = styled.div`
     background-image: url(${img});
-    background-size: u 80%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     width: 100%;
     /* @media screen and (max-width: 737){

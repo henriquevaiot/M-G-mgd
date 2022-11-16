@@ -333,9 +333,6 @@ export default function Home() {
                 {pressed === 'fourComponent' && <Servico3 />}
 
             </ContainerServicos>
-            {/* <Servico1 /> */}
-            {/*  <Servico2/> */}
-            {/* <Servico3/> */}
 
             <ContainerBalance>
                 <ContainerBalanceText>

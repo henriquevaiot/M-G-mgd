@@ -4,7 +4,7 @@ export const Container = styled.div`
 
 `
 export const BlocoTextForm = styled.div`
-    margin-top: -165px;
+    margin-top: -125px;
 
     @media (max-width: 600px) {   
         margin-top: -25px;
@@ -57,7 +57,7 @@ export const Tag = styled.a`
 export const Title = styled.p`
     color: #94C2E5;
     margin-left: 150px;
-    font-size: 109px;
+    font-size: 70px;
     font-family: Chapanza;
 
     @media (max-width: 600px) {   
@@ -72,7 +72,7 @@ export const Description1 = styled.p`
     color: #ccc;
     font-weight: 300;
     margin-left: 150px;
-    margin-top: -100px;
+    margin-top: -60px;
     font-family: Umumu;
 
     @media (max-width: 600px) {   
