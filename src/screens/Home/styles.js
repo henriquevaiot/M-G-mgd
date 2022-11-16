@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import img from '../../assets/bgwallpaper.jpg'
-import bg2 from '../../assets/bg2.png'
+import bg2 from '../../assets/video/photo.png'
 import bg3 from '../../assets/bg3.png'
 import detail2 from '../../assets/detail2.png'
 import bgquad from '../../assets/bgquad.jpg'
@@ -19,7 +19,7 @@ export const Container = styled.div`
 `
 export const HomeContainer = styled.div`
     background-image: url(${img});
-    background-size: auto auto;
+    background-size: u 80%;
     background-repeat: no-repeat;
     width: 100%;
     /* @media screen and (max-width: 737){
@@ -31,7 +31,7 @@ export const ContainerMovie = styled.div`
     margin-top: 10px;
     background-image: url(${bg2});
     background-position: top center;
-    background-size: auto auto;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -424,8 +424,7 @@ export const ContainerServicos = styled.div`
 `
 export const BoxBalance = styled.div`
     height: 700px;
-/*     background-color: red; */
-    padding-top: 50px;
+    padding-top: 15px;
 
     @media (max-width: 600px) {   
         height: 700px;
