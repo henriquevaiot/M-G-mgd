@@ -11,9 +11,10 @@ export const Title = styled.h1`
     font-family: Chapanza;
 
     @media (max-width: 600px) {   
-        color: red;
-        font-size: 10;
-        margin-left: 5px;
+        color: #94C2E5;
+        font-size: 10px;
+        margin-left: 15px;
+        margin-top: 35px;
         font-family: Chapanza;
     }
 `
@@ -21,6 +22,12 @@ export const Description = styled.p`
     color: #fff;
     font-weight: 300;
     margin-left: 150px;
+    @media (max-width: 600px) {   
+        color: #fff;
+        font-weight: 300px;
+        font-size: 10px;
+        margin-left: 15px;
+    }
 `
 export const BlocoText1 = styled.div``
 export const BlocoALign = styled.div`

@@ -25,7 +25,7 @@ import logo from '../../assets/logo.png'
 import wpp from '../../assets/wpp.png'
 import email from '../../assets/email.png'
 
-export default function Header() {
+export default function Header({href}) {
 
     const [mouseOver, setMouseOver] = useState(false)
 
@@ -48,27 +48,6 @@ export default function Header() {
                     <LogoMM
                         src={logo} width="80%" />
                 </DivMm>
-
-                {/* <ul>
-                    <li>HOME</li>
-                    <li>QUEM SOMOS</li>
-                    <li>SISTEMA</li>
-                    <li onMouseOver={() => setMouseOver(true)} onMouseOut={() => setMouseOver(false)}>
-                        <span>SERVIÇOS</span>
-                        {mouseOver && (
-                            <ul>
-                                <li>ENGENHARIA E PROJETOS</li>
-                                <li>FABRICAÇÃO E MONTAGEM DE DUTOS</li>
-                                <li>INSTAÇÃO E RETROFIT</li>
-                                <li>BALANCEAMENTO E COMISSIONAMENTO</li>
-                            </ul>
-                        )}
-                    </li>
-                    <li>PORTFÓLIO</li>
-                    <li>BLOG</li>
-                    <li>CONTATO</li>
-                </ul> */}
-
                 <Tag href="/">
                     <Texto>HOME</Texto>
                 </Tag>

@@ -22,9 +22,6 @@ export const HomeContainer = styled.div`
     background-size: auto auto;
     background-repeat: no-repeat;
     width: 100%;
-
-    background-color: red;
-
     /* @media screen and (max-width: 737){
         width: 60%;
     } */
@@ -74,7 +71,7 @@ export const ContainerGlobalForm = styled.div`
     }
 `
 export const ContainerInform = styled.div`
-    background-color: red;
+    background-color: #0787B5;
     height: 149vh;
     background-image: url(${bg3});
     background-position: top center;
@@ -83,7 +80,6 @@ export const ContainerInform = styled.div`
     margin-top: 10px;
 
     @media (max-width: 600px) {   
-        background-color: blue;
         height: 100vh;
         background-image: url(${bg3});
         background-position: top center;
@@ -99,7 +95,7 @@ export const ContText = styled.div`
     padding: 10px;
 
     @media (max-width: 600px) {   
-        background-color: green;
+        background-color: #0787B5;
         height:45vh;
         width: 500px;
         align-items: center;
@@ -130,7 +126,7 @@ export const ContSubscription = styled.div`
     @media (max-width: 600px) {   
         height: 150px;
         width: 350px;
-        background-color: blue;
+        background-color: ${rgba('#fff', 0.6)};
         padding: 10px;
         display: flex;
         align-items: center;
@@ -283,7 +279,6 @@ export const ContainerGaleria = styled.div`
 export const BoxGaleria = styled.div`
     height: 450px;
     width: 450px;
-    background-color: blue;
     margin-right: 30px;
     margin-top: 90px;
 `
@@ -348,7 +343,7 @@ export const Conteudo1 = styled.div`
     @media (max-width: 768px) {
     flex-direction: column;
     display: flex;
-    background-color: red;
+    background-color: blue;
     margin-right: 100px;
     margin-left: 100px;
     width: 100%;
@@ -421,7 +416,7 @@ export const ContainerServicos = styled.div`
     @media (max-width: 600px) {   
         background-size: 100% auto;
         /* background-color: red; */
-        margin-top: 200vh;
+        margin-top: 175vh;
         background-repeat: no-repeat;
     }
 `
@@ -445,7 +440,7 @@ export const ContainerBalance = styled.div`
 
     @media (max-width: 600px) {   
         background-size: 100% auto;
-        margin-top: -76vh;
+        margin-top: -65vh;
         background-repeat: no-repeat;
         height: 30vh;
     }

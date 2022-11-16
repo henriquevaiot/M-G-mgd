@@ -8,7 +8,6 @@ export const ContainerQuemSomos = styled.div`
     background-image: url(${fabrica});
     height: 494px;
     margin-top: 85px;
-    background-color: red;
     background-size: 100% auto;
     background-repeat: no-repeat;
 

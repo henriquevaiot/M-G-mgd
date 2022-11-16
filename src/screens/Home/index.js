@@ -87,6 +87,7 @@ import p3 from '../../assets/p3.jpg'
 import m1 from '../../assets/m1.jpg'
 import m2 from '../../assets/m2.jpg'
 import m3 from '../../assets/m3.jpg'
+import { render } from "@testing-library/react";
 
 const images = [pessoa1, pessoa, pessoa2]
 const p = [p1, p2, p3]
@@ -97,16 +98,11 @@ export default function Home() {
     const carousel = useRef()
     const [width, setWidth] = useState(0)
 
-    const [pressed, setPressed] = useState(0)
+    const [pressed, setPressed] = useState('firstComponent')
 
     useEffect(() => {
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
     }, []);
-
-
-    function handleServicos(){
-        setPressed(1)
-    }
 
     return (
         <Container>
@@ -313,30 +309,29 @@ export default function Home() {
                 <DivTextTitle>
                     <EspecificacoesServico>ESPECIFICAÇÕES DO SERVIÇO</EspecificacoesServico>
                     <AlignItemsLocation>
-                        <Tag style={{cursor: 'pointer'}} onClick={handleServicos}>
+                        <Tag onClick={() => setPressed('firstComponent')} style={{ cursor: 'pointer' }}>
                             <Texto>ENGENHARIA E PROJETOS</Texto>
                         </Tag>
-                        <Tag style={{ marginLeft: 20 }}>
+                        <Tag onClick={() => setPressed('secondComponent')} style={{ cursor: 'pointer', marginLeft: 20 }}>
                             <Texto>FABRICAÇÃO E MONTAGEM DE DUTOS</Texto>
                         </Tag>
-                        <Tag style={{ marginLeft: 20 }}>
+                        <Tag onClick={() => setPressed('threeComponent')}  style={{ cursor: 'pointer', marginLeft: 20 }}>
                             <Texto>INSTAÇÃO E RETROFIT</Texto>
                         </Tag>
-                        <Tag style={{ marginLeft: 20 }}>
+                        <Tag onClick={() => setPressed('fourComponent')} style={{ cursor: 'pointer', marginLeft: 20 }}>
                             <Texto>BALANCEAMENTO E COMISSIONAMENTO</Texto>
                         </Tag>
                     </AlignItemsLocation>
                 </DivTextTitle>
-                {pressed === 0 ? (
-                    <Servico2 />
-                ) : (
-                    <Servico1 />
-                )}
-            </ContainerServicos>
-            {/* <Servico2 /> */}
-            {/* <Servico3/> */}
-            {/*  <Servico1 /> */}
+                {pressed === 'firstComponent' && <Servico />}
+                {pressed === 'secondComponent' && <Servico1 />}
+                {pressed === 'threeComponent' && <Servico2/>}
+                {pressed === 'fourComponent' && <Servico3 />}
 
+            </ContainerServicos>
+            {/* <Servico1 /> */}
+            {/*  <Servico2/> */}
+            {/* <Servico3/> */}
 
             <ContainerBalance>
                 <ContainerBalanceText>

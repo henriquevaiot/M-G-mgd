@@ -35,7 +35,6 @@ export const Box1 = styled.div`
     background-image: url(${blog1});
     height: 417px;
     margin-right: 15px;
-    background-color: blue;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -55,7 +54,6 @@ export const Box2 = styled.div`
     height: 417px;
     /* width: 461px; */
     margin-right: 15px;
-    background-color: blue;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -65,7 +63,6 @@ export const Box3 = styled.div`
     height: 417px;
     /* width: 461px; */
     margin-right: 15px;
-    background-color: blue;
     display: flex;
     align-items: center;
     justify-content: end;

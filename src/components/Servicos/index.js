@@ -53,7 +53,7 @@ export default function Servico() {
                     </BoxImg>
                 </Box>
 
-                <Box>
+                 <Box>
                     <ContainerTitle>
                         <Bloco
                             style={{
@@ -185,7 +185,7 @@ export default function Servico() {
                             do ar e na climatização do <br/> ambiente.
                         </Description>
                     </BoxImg4>
-                </Box>
+                </Box> 
             </ContainerBox>
         </Container>
     )
