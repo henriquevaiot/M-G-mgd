@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TitlePortfólio = styled.h1`
     color: #000000;
-    font-family: Chapaza, serif;
+    font-family: Chapaza;
     font-size: 109px;
     margin-left: 150px;
     height: 20px;

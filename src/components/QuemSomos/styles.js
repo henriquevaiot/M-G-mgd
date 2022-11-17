@@ -7,10 +7,9 @@ import { rgba } from 'polished'
 export const ContainerQuemSomos = styled.div`
     background-image: url(${fabrica});
     height: 494px;
-    margin-top: 85px;
+    margin-top: 50px;
     background-size: 100% auto;
     background-repeat: no-repeat;
-
     @media (max-width: 600px) {   
         background-image: url(${fabrica});
         background-size: 250% auto;
@@ -26,7 +25,6 @@ export const ContainerQuemSomos = styled.div`
 export const Container = styled.div`
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     padding-top: 0.1px;
 `
 export const BoxSomos = styled.div`
@@ -43,7 +41,7 @@ export const TituloQuemSomos = styled.p`
     color: #fff;
     font-size: 109px;
     margin-left: 80px;
-    font-family: Chapanza;
+    font-family: Chapaza;
     @media (max-width: 600px) {   
         font-size: 8vw;
         margin-top:50px;

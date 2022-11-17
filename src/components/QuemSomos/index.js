@@ -9,12 +9,12 @@ import {
     ContainerQuemSomos
 } from './styles'
 
-export default function Blog() {
+export default function Blog({id}) {
     return (
-        <Container>
+        <Container id={id}>
             <ContainerQuemSomos>
                 <BoxSomos>
-                    {<TituloQuemSomos>Quem Somos</TituloQuemSomos>}
+                    <TituloQuemSomos>Quem Somos</TituloQuemSomos>
                     <Description>
                         <SubTitle>Excelencia e Inovacao</SubTitle>
                         A M & M Soluções em Engenharia é uma empresa especialista em fornecimento de Equipamentos,<br />

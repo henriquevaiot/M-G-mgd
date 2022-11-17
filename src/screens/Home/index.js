@@ -89,7 +89,11 @@ import p3 from '../../assets/p3.jpg'
 import m1 from '../../assets/carrossel/pessoa.png'
 import m2 from '../../assets/carrossel/pessoa1.png'
 import m3 from '../../assets/carrossel/pessoa2.png'
-import { render } from "@testing-library/react";
+import detail from '../../assets/logos/detail.png'
+
+import {DefaultPlayer as Video} from 'react-html5video'
+import 'react-html5video/dist/styles.css'
+import playvideo from '../../assets/video/intro.mp4'
 
 const images = [pessoa1, pessoa, pessoa2]
 const p = [p1, p2, p3]
@@ -111,7 +115,7 @@ export default function Home() {
         <Container>
 
             <HomeContainer>
-                {<Header />}
+                {<Header/>}
                 <BannerContainer>
                     <LogoMM width="50%" src={Banner} />
                 </BannerContainer>
@@ -127,11 +131,13 @@ export default function Home() {
                 </ContabainerCircle>
             </HomeContainer>
 
-            <ContainerMovie>
-                <a target="_blank" href="https://www.youtube.com/watch?v=xcJtL7QggTI">
+                <Video
+                    autoPlay loop>
+                        <source src={playvideo} type="video/webm" />
+                </Video>
+                {/* <a target="_blank" href="https://www.youtube.com/watch?v=xcJtL7QggTI">
                     <LogoYoutube src={Youtube} width="90%" />
-                </a>
-            </ContainerMovie>
+                </a> */}
 
             <ContainerInform>
                 <ContainerGlobalForm>
@@ -158,13 +164,12 @@ export default function Home() {
                             de sustentabilidade.
                         </ContAndText>
                     </ContAndSubscription>
-
                 </ContainerGlobalForm>
             </ContainerInform>
 
-            <QuemSomos />
+            <QuemSomos id="anchor" />
 
-            <ContainerGaleria>
+            <ContainerGaleria style={{marginTop: -35}}>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
                     <motion.div
                         drag="x"
@@ -179,15 +184,15 @@ export default function Home() {
                 </motion.div>
             </ContainerGaleria>
 
-            <ContainerSistem>
+            <ContainerSistem id="sistem">
                 <DivText>
                     <TitleEspecSistemas>
                         ESPECIFICAÇÕES<br />
                         DOS SISTEMAS
                     </TitleEspecSistemas>
-                    {/* <ContainerCircleTitle> 
+                    <ContainerCircleTitle> 
                          <CircleDetail></CircleDetail>
-                     </ContainerCircleTitle>  */}
+                     </ContainerCircleTitle> 
                 </DivText>
                 <ContainerConteudoTexto>
                     <div className="divColumn" style={{ width: 190 }}>
@@ -308,7 +313,7 @@ export default function Home() {
                 </ContainerConteudoTexto>
             </ContainerSistem>
 
-            <ContainerServicos>
+            <ContainerServicos id="servicos">
                 <DivTextTitle>
                     <EspecificacoesServico>ESPECIFICAÇÕES DO SERVIÇO</EspecificacoesServico>
                     <AlignItemsLocation>
@@ -326,7 +331,7 @@ export default function Home() {
                         </Tag>
                     </AlignItemsLocation>
                 </DivTextTitle>
-                {pressed === '' && <Servico />}
+                {pressed === '' && <Servico id="teste"/>}
                 {pressed === 'firstComponent' && <Servico0 />}
                 {pressed === 'secondComponent' && <Servico1 />}
                 {pressed === 'threeComponent' && <Servico2/>}
@@ -375,11 +380,11 @@ export default function Home() {
                 </motion.div>
             </ContainerCarrosselFound>
 
-            <ContainerPortfolio>
+            <ContainerPortfolio id="portfolio">
                 <CarrosselPortfolio />
             </ContainerPortfolio>
 
-            <ContainerBlog>
+            <ContainerBlog id="blog">
                 <Blog />
             </ContainerBlog>
 
@@ -405,7 +410,7 @@ export default function Home() {
 
             <Clientes />
 
-            {<Formulario />}
+            <Formulario id="form"/>
         </Container>
     )
 }

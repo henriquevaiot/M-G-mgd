@@ -15,10 +15,17 @@ export const HeaderContainer = styled.div`
 export const TextoLi = styled.li`
     list-style: none;
 `
+export const Linha = styled.div`
+    height: 40px;
+    width: 5px;
+    background-color: #fff;
+`
 export const LiListServicos = styled.li`
     color: #fff;
     font-size: 13px;
-
+    width: 300px;
+    list-style: none;
+    margin-left: 20px;
     &:hover, 
     &:focus {
         color: #C99C1E;
@@ -54,7 +61,7 @@ export const QuemSomos = styled.div`
 export const Texto = styled(Tag)`
     color: #fff;
     margin: 20px;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     font-weight: 700;
     white-space: nowrap;
     

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './styles.css'
 import {
     HeaderContainer,
     Texto,
@@ -18,14 +19,19 @@ import {
     TagQuemSOmos,
     QuemSomos,
     TextoLi,
-    LiListServicos
+    LiListServicos,
+    Linha
 } from './styles'
 
 import logo from '../../assets/logo.png'
 import wpp from '../../assets/wpp.png'
 import email from '../../assets/email.png'
+import linkedin from '../../assets/logos/linkedin.png'
 
-export default function Header({href}) {
+
+
+export default function Header({ levar }) {
+
 
     const [mouseOver, setMouseOver] = useState(false)
 
@@ -52,34 +58,48 @@ export default function Header({href}) {
                     <Texto>HOME</Texto>
                 </Tag>
                 <QuemSomos>
-                    <Tag href="/">
+                    <Tag href="#anchor">
                         <Texto>QUEM SOMOS</Texto>
                     </Tag>
                 </QuemSomos>
-                <Tag href="/">
+                <Tag href="#sistem">
                     <Texto>SISTEMAS</Texto>
                 </Tag>
-                <Tag href="/">
-                    <TextoLi onMouseOver={() => setMouseOver(true)} onMouseOut={() => setMouseOver(false)}>
-                        <Texto>SISTEMAS</Texto>
+                <Tag href="#servicos">
+                    {/* <TextoLi onMouseOver={() => setMouseOver(true)} onMouseOut={() => setMouseOver(false)}>
+                        <Texto >SERVIÇOS</Texto>
                         {mouseOver && (
-                            <ul>
-                                <LiListServicos>ENGENHARIA E PROJETOS</LiListServicos>
+                            <ul style={{position: 'absolute'}}>
+                                <LiListServicos href="#teste">ENGENHARIA E PROJETOS</LiListServicos>
                                 <LiListServicos>FABRICAÇÃO E MONTAGEM DE DUTOS</LiListServicos>
                                 <LiListServicos>INSTAÇÃO E RETROFIT</LiListServicos>
                                 <LiListServicos>BALANCEAMENTO E COMISSIONAMENTO</LiListServicos>
                             </ul>
                         )}
-                    </TextoLi>
+                    </TextoLi> */}
+                    <div class="dropdown">
+                        <Texto >SERVIÇOS</Texto>
+                        <div class="dropdown-content">
+                            <div>
+                                <LiListServicos>ENGENHARIA E PROJETOS</LiListServicos>
+                                <LiListServicos>FABRICAÇÃO E MONTAGEM DE DUTOS</LiListServicos>
+                                <LiListServicos>INSTAÇÃO E RETROFIT</LiListServicos>
+                                <LiListServicos>BALANCEAMENTO E COMISSIONAMENTO</LiListServicos>
+                            </div>
+                        </div>
+                    </div>
                 </Tag>
-                <Tag href="/">
+                <Tag href="#portfolio">
                     <Texto>PORTIFÓLIO</Texto>
                 </Tag>
-                <Tag href="/">
+                <Tag href="#blog">
                     <Texto>BLOG</Texto>
                 </Tag>
-                <Tag href="/">
+                <Tag href="#form">
                     <Texto>CONTATO</Texto>
+                </Tag>
+                <Tag href="">
+                    <img src={linkedin} width="30" />
                 </Tag>
             </ContainerNavHeader>
         </HeaderContainer>

@@ -18,40 +18,49 @@ import {
     DescriptionP
 } from './styles'
 
-export default function Formulario() {
+import mensagem from '../../assets/logos/mensagem.png'
+import carta from '../../assets/logos/carta.png'
+
+export default function Formulario({ id }) {
     return (
-        <Container>
+        <Container id={id}>
             <BoxFormulario>
                 <BoxContato>
                     <Title>Contato</Title>
                     <boxTitulo>
                         <DescriptionP>
-                            Com nossos anos de experiência e conhecimento, sabemos<br/> como criar soluções que funcionam para você e sua<br/> empresa. Seja uma loja ou uma grande fábrica.
+                            Com nossos anos de experiência e conhecimento, sabemos<br /> como criar soluções que funcionam para você e sua<br /> empresa. Seja uma loja ou uma grande fábrica.
                         </DescriptionP>
                         <DescriptionP>
-                            Temos a experiência que você precisa para garantir que seu<br/> projeto de ar-condicionado seja feito corretamente.
+                            Temos a experiência que você precisa para garantir que seu<br /> projeto de ar-condicionado seja feito corretamente.
                         </DescriptionP>
                         <DescriptionP>
-                            Operamos a mais de 7 anos no mercado, oferecendo<br/> serviços de alta qualidade para todo o Brasil
+                            Operamos a mais de 7 anos no mercado, oferecendo<br /> serviços de alta qualidade para todo o Brasil
                         </DescriptionP>
                         <DescriptionP>
-                            Somos licenciados, segurados e nossos técnicos são<br/> certificados em HVAC.
+                            Somos licenciados, segurados e nossos técnicos são<br /> certificados em HVAC.
                         </DescriptionP>
                         <DescriptionP>
-                            Se você precisa de ar-condicionado de alta qualidade,<br/>fale conosco.
+                            Se você precisa de ar-condicionado de alta qualidade,<br />fale conosco.
                         </DescriptionP>
                     </boxTitulo>
                     <ContainerContato>
                         <p style={{ fontWeight: 'bold', fontFamily: 'unset' }}>SE PREFERIR, LIGUE PARA:</p>
-                        <DescriptionP style={{fontWeight: 'bold'}}>São Paulo</DescriptionP>
-                        <DescriptionP style={{ marginTop: -15 }}>11 00000000</DescriptionP>
-                        <DescriptionP style={{ marginTop: -15 }}>11 00000000</DescriptionP>
-                        <DescriptionP style={{ marginTop: -15 }}>11 00000000</DescriptionP>
+                        <div style={{ display: 'flex', alignItems: 'center', }}>
+                            <img src={mensagem} width="23" height="20" style={{ marginLeft: -35 }} />
+                            <DescriptionP style={{ fontWeight: 'bold', marginLeft: 10 }}>São Paulo</DescriptionP>
+                        </div>
+                        <DescriptionP style={{ marginTop: -15 }}>11 4551 4626</DescriptionP>
+                        <DescriptionP style={{ marginTop: -15 }}>11 99170 0148</DescriptionP>
+                        <DescriptionP style={{ marginTop: -15 }}>11 94586 3789</DescriptionP>
                     </ContainerContato>
                     <ContainerEmail>
-                        <p style={{ fontSize: 14 }}>OU ENVIE UM E-MAIL PARA:</p>
-                        <DescriptionP style={{ marginTop: -15 }}>email@email.com</DescriptionP>
-                        <DescriptionP style={{ marginTop: -15 }}>email@email.com</DescriptionP>
+                        <div style={{ display: 'flex', alignItems: 'center', }}>
+                            <img src={carta} width="23" height="18" style={{ marginLeft: -35 }} />
+                            <p style={{ fontSize: 14, marginLeft: 10 }}>OU ENVIE UM E-MAIL PARA:</p>
+                        </div>
+                        <DescriptionP style={{ marginTop: -15 }}>marcosrosa@memengenharia.com.br</DescriptionP>
+                        <DescriptionP style={{ marginTop: -15 }}>marcelorosa@memengenharia.com.br</DescriptionP>
                     </ContainerEmail>
                     <ContainerEndereco>
                         <DescriptionP style={{ fontWeight: 'bold' }}>SÃO PAULO</DescriptionP>
@@ -69,7 +78,7 @@ export default function Formulario() {
                             </Form>
                         </div>
                         <ButtonEnviar>
-                            <a href='/' style={{textDecoration: 'none', color: "#fff"}}>
+                            <a href='/' style={{ textDecoration: 'none', color: "#fff" }}>
                                 <Enviar>Enviar</Enviar>
                             </a>
                         </ButtonEnviar>

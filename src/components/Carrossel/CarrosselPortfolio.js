@@ -7,6 +7,26 @@ import {
   Item3,
   Item4,
   Item5,
+  Item6,
+  Item7,
+  Item8,
+  Item9,
+  Item10,
+  Item11,
+  Item12,
+  Item13,
+  Item14,
+  Item15,
+  Item16,
+  Item17,
+  Item18,
+  Item19,
+  Item20,
+  Item21,
+  Item22,
+  Item23,
+  Item24,
+  Item25,
   DivTitle
 } from './Item'
 
@@ -33,6 +53,26 @@ function CarrosselPortfolio() {
             <Item3></Item3>
             <Item4></Item4>
             <Item5></Item5>
+            <Item6></Item6>
+            <Item7></Item7>
+            <Item8></Item8>
+            <Item9></Item9>
+            <Item10></Item10>
+            <Item11></Item11>
+            <Item12></Item12>
+            <Item13></Item13>
+            <Item14></Item14>
+            <Item15></Item15>
+            <Item16></Item16>
+            <Item17></Item17>
+            <Item18></Item18>
+            <Item19></Item19>
+            <Item20></Item20>
+            <Item21></Item21>
+            <Item22></Item22>
+            <Item23></Item23>
+            <Item24></Item24>
+            <Item25></Item25>
           </Carousel>
         </div>
       </ContainerBoxCarrosel>

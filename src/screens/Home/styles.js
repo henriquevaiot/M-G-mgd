@@ -22,17 +22,13 @@ export const HomeContainer = styled.div`
     background-size: 100% auto;
     background-repeat: no-repeat;
     width: 100%;
+    margin-bottom: 10px;
     /* @media screen and (max-width: 737){
         width: 60%;
     } */
 `
 export const ContainerMovie = styled.div`
     height: 140vh;
-    margin-top: 10px;
-    background-image: url(${bg2});
-    background-position: top center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +74,7 @@ export const ContainerInform = styled.div`
     background-size: 110% auto;
     background-repeat: no-repeat;
     margin-top: 10px;
+    z-index: 99;
 
     @media (max-width: 600px) {   
         height: 100vh;
@@ -194,6 +191,9 @@ export const ContabainerCircle = styled.div`
     align-items: center;
     display: flex;
     justify-content: end;
+    @media (max-width: 600px) {   
+        display: none
+    }
 `
 export const Circle = styled.div`
     height: 340px;
@@ -218,12 +218,12 @@ export const LogoYoutube = styled.img`
     }
 `
 export const DivHVAC = styled.div`
-    height: 40px;
+    height: 35px;
     width: 100px;
     border-radius: 23px;
     background-color: #0787B5;
-    margin-top: -40px;
-    margin-left: 143px;
+    margin-top: -33px;
+    margin-left: 121px;
 
     @media (max-width: 600px) {   
         height: 30px;
@@ -285,23 +285,21 @@ export const BoxGaleria = styled.div`
 `
 export const ContainerCircleTitle = styled.div`
     display: flex;
+    margin-top: -40px;
 `
 export const CircleDetail = styled.div`
-    height: 370px;
-    width: 370px;
-    margin-left: -225%;
-    margin-bottom: 10px;
-    border-radius: 190px;
-    background-color: ${rgba('#606B84', 0.6)};
+    height: 380px;
+    width: 380px;
+    margin-left: -243%;
+    margin-bottom: 130px;
+    border-radius: 200px;
+    background-color: ${rgba('#606B84', 0.4)};
 `
 export const ContainerSistem = styled.div`
-    width: 100%;
     align-items: center;
-    margin-top: 50px;
-
+    margin-top: 190px;
     background-image: url(${detailEsp});
-/*     background-color: red; */
-    background-size: 100% auto;
+    background-size: 105% auto;
     background-repeat: no-repeat;
 
     @media (max-width: 600px) {
@@ -318,7 +316,7 @@ export const DivText = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    margin-top: -300px;
 `
 export const ContALign = styled.div`
     display: flex;
@@ -503,12 +501,12 @@ export const EspecificacoesServico = styled.h1`
     }
 `
 export const TitleEspecSistemas = styled.h1`
-    font-size: 109px;
+    font-size: 90px;
     color: #000000;
     font-family: Chapaza, serif;
     line-height: 94px;
     margin-left: 150px;
-    margin-top: 150px;
+    margin-top: 15px;
     @media (max-width: 600px) {
         font-size: 30px;
         color: #000000;
@@ -641,7 +639,7 @@ export const ContainerDepoimentos = styled.div`
 `
 
 export const TitleDepoimentos = styled.h1`
-    font-family: Chapanza;
+    font-family: Chapaza;
     margin-left: 90px;
     font-size: 83px;
 
