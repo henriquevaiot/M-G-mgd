@@ -269,7 +269,7 @@ export const CircleNext = styled.div`
 //galeria
 export const ContainerGaleria = styled.div`
     margin: 0 auto;
-    min-height: 89vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,7 +297,7 @@ export const CircleDetail = styled.div`
 `
 export const ContainerSistem = styled.div`
     align-items: center;
-    margin-top: 190px;
+    margin-top: 250px;
     background-image: url(${detailEsp});
     background-size: 105% auto;
     background-repeat: no-repeat;

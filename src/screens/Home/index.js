@@ -78,24 +78,24 @@ import Banner from '../../assets/banner.png'
 import Depoimentos from "components/Depoimentos";
 import mpoc from '../../assets/mpoc.jpg'
 
-import pessoa from '../../assets/depoimentos/pessoa.png'
-import pessoa1 from '../../assets/depoimentos/pessoa1.png'
-import pessoa2 from '../../assets/depoimentos/pessoa2.png'
+import pessoa from '../../assets/images/1.png'
+import pessoa1 from '../../assets/images/2.png'
+import pessoa2 from '../../assets/images/3.png'
 
 import p1 from '../../assets/p1.jpg'
 import p2 from '../../assets/p2.jpg'
 import p3 from '../../assets/p3.jpg'
 
-import m1 from '../../assets/carrossel/pessoa.png'
-import m2 from '../../assets/carrossel/pessoa1.png'
-import m3 from '../../assets/carrossel/pessoa2.png'
+import m1 from '../../assets/images/m1.png'
+import m2 from '../../assets/images/m2.png'
+import m3 from '../../assets/images/m3.png'
 import detail from '../../assets/logos/detail.png'
 
 import {DefaultPlayer as Video} from 'react-html5video'
 import 'react-html5video/dist/styles.css'
 import playvideo from '../../assets/video/intro.mp4'
 
-const images = [pessoa1, pessoa, pessoa2]
+const images = [pessoa, pessoa1, pessoa2]
 const p = [p1, p2, p3]
 const m = [m1, m2, m3]
 
@@ -130,15 +130,10 @@ export default function Home() {
                     </Circle>
                 </ContabainerCircle>
             </HomeContainer>
-
                 <Video
                     autoPlay loop>
                         <source src={playvideo} type="video/webm" />
                 </Video>
-                {/* <a target="_blank" href="https://www.youtube.com/watch?v=xcJtL7QggTI">
-                    <LogoYoutube src={Youtube} width="90%" />
-                </a> */}
-
             <ContainerInform>
                 <ContainerGlobalForm>
                     <ContainerBlocoSubscription>
@@ -169,7 +164,7 @@ export default function Home() {
 
             <QuemSomos id="anchor" />
 
-            <ContainerGaleria style={{marginTop: -35}}>
+            <ContainerGaleria style={{marginTop: -5}}>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
                     <motion.div
                         drag="x"

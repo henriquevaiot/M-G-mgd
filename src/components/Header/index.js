@@ -40,7 +40,7 @@ export default function Header({ levar }) {
             <ContainerLinks>
                 <LinkWpp>
                     <img src={wpp} width="17%" />
-                    <TextWpp>Fale Cosnoco</TextWpp>
+                    <TextWpp href="https://api.whatsapp.com/send?phone=551145514626&text=Ol%C3%A1%2C%20eu%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!">Fale Cosnoco</TextWpp>
                 </LinkWpp>
 
                 <LinkEmail>

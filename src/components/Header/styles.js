@@ -109,10 +109,11 @@ export const ContainerLinks = styled.div`
         margin-left: 76%;
     }
 `
-export const TextWpp = styled.text`
+export const TextWpp = styled.a`
     margin-left: 5px;
     color: #fff;
-
+    cursor: pointer;
+    text-decoration: none;
     @media (max-width: 600px) {
         font-size: 15px;
     }
