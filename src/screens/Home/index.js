@@ -89,13 +89,17 @@ import p3 from '../../assets/p3.jpg'
 import m1 from '../../assets/images/m1.png'
 import m2 from '../../assets/images/m2.png'
 import m3 from '../../assets/images/m3.png'
-import detail from '../../assets/logos/detail.png'
+
+import d1 from '../../assets/depoimentos/pessoa.png'
+import d2 from '../../assets/depoimentos/pessoa1.png'
+import d3 from '../../assets/depoimentos/pessoa2.png'
 
 import {DefaultPlayer as Video} from 'react-html5video'
 import 'react-html5video/dist/styles.css'
 import playvideo from '../../assets/video/intro.mp4'
 
 const images = [pessoa, pessoa1, pessoa2]
+const depoimentos = [d1,  d2, d3]
 const p = [p1, p2, p3]
 const m = [m1, m2, m3]
 
@@ -394,7 +398,7 @@ export default function Home() {
                         drag="x"
                         className="inner"
                         dragConstraints={{ right: 0, left: width }}>
-                        {images.map(image => (
+                        {depoimentos.map(image => (
                             <motion.div className="item" key={image}>
                                 <img src={image} alt="texto alto" />
                             </motion.div>
