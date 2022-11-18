@@ -24,6 +24,7 @@ export const LiListServicos = styled.li`
     color: #fff;
     font-size: 13px;
     width: 300px;
+    margin-top: 3px;
     list-style: none;
     margin-left: 20px;
     &:hover, 
@@ -165,6 +166,7 @@ export const LinkEmail = styled.div`
 export const TextEmail = styled.text`
     color: #fff;
     margin-left: 5px;
+    cursor: pointer;
 
     @media (max-width: 600px) {
         font-size: 15px;

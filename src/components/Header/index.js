@@ -98,7 +98,7 @@ export default function Header({ levar }) {
                 <Tag href="#form">
                     <Texto>CONTATO</Texto>
                 </Tag>
-                <Tag href="">
+                <Tag href="https://www.linkedin.com/company/mm-solucoes-em-engenharia/">
                     <img src={linkedin} width="30" />
                 </Tag>
             </ContainerNavHeader>

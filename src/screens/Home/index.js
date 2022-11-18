@@ -96,7 +96,7 @@ import d3 from '../../assets/depoimentos/pessoa2.png'
 
 import {DefaultPlayer as Video} from 'react-html5video'
 import 'react-html5video/dist/styles.css'
-import playvideo from '../../assets/video/intro.mp4'
+import playvideo from '../../assets/video/video.mp4'
 
 const images = [pessoa, pessoa1, pessoa2]
 const depoimentos = [d1,  d2, d3]
