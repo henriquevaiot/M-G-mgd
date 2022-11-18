@@ -93,7 +93,8 @@ export const BoxImg2 = styled.div`
 `
 export const BoxImg3 = styled.div`
     background-image: url(${bg3});
-    height: 520px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-size: 100% auto;
     background-repeat: no-repeat;
     display: flex;
@@ -107,7 +108,8 @@ export const BoxImg3 = styled.div`
 `
 export const BoxImg4 = styled.div`
     background-image: url(${bg4});
-    height: 420px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     background-size: 100% auto;
     background-repeat: no-repeat;
     display: flex;
