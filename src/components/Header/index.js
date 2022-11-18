@@ -30,7 +30,7 @@ import linkedin from '../../assets/logos/linkedin.png'
 
 
 
-export default function Header({ levar }) {
+export default function Header({ onClick }) {
 
 
     const [mouseOver, setMouseOver] = useState(false)
@@ -81,7 +81,7 @@ export default function Header({ levar }) {
                         <Texto >SERVIÇOS</Texto>
                         <div class="dropdown-content">
                             <div>
-                                <LiListServicos>ENGENHARIA E PROJETOS</LiListServicos>
+                                <LiListServicos onClick={onClick}>ENGENHARIA E PROJETOS</LiListServicos>
                                 <LiListServicos>FABRICAÇÃO E MONTAGEM DE DUTOS</LiListServicos>
                                 <LiListServicos>INSTAÇÃO E RETROFIT</LiListServicos>
                                 <LiListServicos>BALANCEAMENTO E COMISSIONAMENTO</LiListServicos>
