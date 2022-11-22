@@ -2,14 +2,11 @@ import styled from 'styled-components'
 
 import fabrica from '../../assets/fabrica.jpg'
 
-import { rgba } from 'polished'
-
 export const ContainerQuemSomos = styled.div`
     background-image: url(${fabrica});
-    height: 494px;
-    margin-top: 50px;
     background-size: 100% auto;
     background-repeat: no-repeat;
+    padding-bottom: 10px;
     @media (max-width: 600px) {   
         background-image: url(${fabrica});
         background-size: 250% auto;
@@ -25,15 +22,13 @@ export const ContainerQuemSomos = styled.div`
 export const Container = styled.div`
     justify-content: center;
     align-items: center;
-    padding-top: 0.1px;
 `
 export const BoxSomos = styled.div`
     /* width: 800px; */
-    margin-top: -95px;
+    margin-top: -100px;
 
     @media (max-width: 600px) {   
         margin-top: -40px;
-        
     }
 
 `
@@ -61,7 +56,7 @@ export const SubTitle = styled.h2`
 `
 export const Description = styled.p`
     color: #fff;
-    margin-top: -110px;
+    margin-top: -150px;
     margin-left: 90px;
     font-family: Umumu;
 

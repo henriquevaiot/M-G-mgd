@@ -66,17 +66,7 @@ export default function Header({ onClick }) {
                     <Texto>SISTEMAS</Texto>
                 </Tag>
                 <Tag href="#servicos">
-                    {/* <TextoLi onMouseOver={() => setMouseOver(true)} onMouseOut={() => setMouseOver(false)}>
-                        <Texto >SERVIÇOS</Texto>
-                        {mouseOver && (
-                            <ul style={{position: 'absolute'}}>
-                                <LiListServicos href="#teste">ENGENHARIA E PROJETOS</LiListServicos>
-                                <LiListServicos>FABRICAÇÃO E MONTAGEM DE DUTOS</LiListServicos>
-                                <LiListServicos>INSTAÇÃO E RETROFIT</LiListServicos>
-                                <LiListServicos>BALANCEAMENTO E COMISSIONAMENTO</LiListServicos>
-                            </ul>
-                        )}
-                    </TextoLi> */}
+
                     <div class="dropdown">
                         <Texto >SERVIÇOS</Texto>
                         <div class="dropdown-content">

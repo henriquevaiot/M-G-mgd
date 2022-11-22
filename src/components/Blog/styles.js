@@ -33,11 +33,7 @@ export const BlogText = styled.h1`
 `
 export const Box1 = styled.div`
     background-image: url(${blog1});
-    height: 417px;
     margin-right: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
 
     @media (min-width: 600px) {
         background-image: url(${blog1});
@@ -51,8 +47,6 @@ export const Box1 = styled.div`
 `
 export const Box2 = styled.div`
     background-image: url(${blog2});
-    height: 417px;
-    /* width: 461px; */
     margin-right: 15px;
     display: flex;
     align-items: center;
@@ -61,7 +55,6 @@ export const Box2 = styled.div`
 export const Box3 = styled.div`
     background-image: url(${blog3});
     height: 417px;
-    /* width: 461px; */
     margin-right: 15px;
     display: flex;
     align-items: center;
@@ -72,8 +65,8 @@ export const BoxTitle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 250px;
     width: 430px;
     background-color: #fff;
-    margin-top: 260px;
     margin-left: 35px;
 `

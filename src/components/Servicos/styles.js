@@ -64,10 +64,10 @@ export const Box = styled.div`
 `
 export const BoxImg = styled.div`
     background-image: url(${bg2});
-    height: 420px;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
+    padding-top: 20px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -78,9 +78,9 @@ export const BoxImg = styled.div`
 `
 export const BoxImg2 = styled.div`
     background-image: url(${bg1});
-    height: 410px;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,9 +93,9 @@ export const BoxImg2 = styled.div`
 `
 export const BoxImg3 = styled.div`
     background-image: url(${bg3});
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-size: 100% auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -108,9 +108,9 @@ export const BoxImg3 = styled.div`
 `
 export const BoxImg4 = styled.div`
     background-image: url(${bg4});
-    padding-top: 30px;
-    padding-bottom: 50px;
-    background-size: 100% auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;

@@ -94,12 +94,12 @@ import d1 from '../../assets/depoimentos/pessoa.png'
 import d2 from '../../assets/depoimentos/pessoa1.png'
 import d3 from '../../assets/depoimentos/pessoa2.png'
 
-import {DefaultPlayer as Video} from 'react-html5video'
+import { DefaultPlayer as Video } from 'react-html5video'
 import 'react-html5video/dist/styles.css'
 import playvideo from '../../assets/video/video.mp4'
 
 const images = [pessoa, pessoa1, pessoa2]
-const depoimentos = [d1,  d2, d3]
+const depoimentos = [d1, d2, d3]
 const p = [p1, p2, p3]
 const m = [m1, m2, m3]
 
@@ -119,7 +119,7 @@ export default function Home() {
         <Container>
 
             <HomeContainer>
-                {<Header/>}
+                {<Header />}
                 <BannerContainer>
                     <LogoMM width="50%" src={Banner} />
                 </BannerContainer>
@@ -134,10 +134,10 @@ export default function Home() {
                     </Circle>
                 </ContabainerCircle>
             </HomeContainer>
-                <Video
-                    autoPlay loop>
-                        <source src={playvideo} type="video/webm" />
-                </Video>
+            <Video
+                autoPlay loop>
+                <source src={playvideo} type="video/webm" />
+            </Video>
             <ContainerInform>
                 <ContainerGlobalForm>
                     <ContainerBlocoSubscription>
@@ -155,18 +155,18 @@ export default function Home() {
                         </ContSubscription>
                     </ContainerBlocoSubscription>
 
-                    <ContAndSubscription>
-                        <ContAndText>
-                            Possuímos ampla experiência em<br />
-                            instalações de empreendimentos<br />
-                            que buscam certificação LEED<br />
-                            de sustentabilidade.
-                        </ContAndText>
-                    </ContAndSubscription>
                 </ContainerGlobalForm>
+                <ContAndSubscription>
+                    <ContAndText>
+                        Possuímos ampla experiência em<br />
+                        instalações de empreendimentos<br />
+                        que buscam certificação LEED<br />
+                        de sustentabilidade.
+                    </ContAndText>
+                </ContAndSubscription>
             </ContainerInform>
 
-            <QuemSomos id="anchor" />
+             <QuemSomos id="anchor" />
 
             <ContainerGaleria style={{marginTop: -5}}>
                 <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
@@ -183,7 +183,7 @@ export default function Home() {
                 </motion.div>
             </ContainerGaleria>
 
-            <ContainerSistem id="sistem">
+             <ContainerSistem id="sistem">
                 <DivText>
                     <TitleEspecSistemas>
                         ESPECIFICAÇÕES<br />
@@ -310,7 +310,7 @@ export default function Home() {
                         </DivConteudo1>
                     </div>
                 </ContainerConteudoTexto>
-            </ContainerSistem>
+            </ContainerSistem> 
 
             <ContainerServicos id="servicos">
                 <DivTextTitle>

@@ -17,7 +17,6 @@ import {
 export default function Blog() {
     return (
         <Container>
-            {/* <BlogText>Blog</BlogText> */}
             <ContainerBlog>
 
                 <ContainerBox>

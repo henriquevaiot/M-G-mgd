@@ -39,8 +39,8 @@ export const ContainerMovie = styled.div`
 `
 export const LogoMM = styled.img`
         @media (max-width: 600px){
-            width: 350px;
-            margin-top: -45px;
+            width: 200px;
+            margin-top: -90px;
         }
 `
 export const BannerContainer = styled.div`
@@ -55,11 +55,6 @@ export const ContainerBlocoSubscription = styled.div`
     align-items: flex-end;
 `
 export const ContainerGlobalForm = styled.div`
-    background-image: url(${detail2});
-    background-position: top center;
-    background-size: 100% auto;
-    position: relative;
-    background-repeat: no-repeat;
 
      @media screen and (max-width: 600px){
         flex-direction: column;
@@ -67,15 +62,12 @@ export const ContainerGlobalForm = styled.div`
     }
 `
 export const ContainerInform = styled.div`
-    background-color: #0787B5;
-    height: 149vh;
+    /* background-color: #0787B5; */
     background-image: url(${bg3});
     background-position: top center;
-    background-size: 110% auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     margin-top: 10px;
-    z-index: 99;
-
     @media (max-width: 600px) {   
         height: 100vh;
         background-image: url(${bg3});
@@ -86,10 +78,10 @@ export const ContainerInform = styled.div`
     }
 `
 export const ContText = styled.div`
-    height: 635px;
+    height: 620px;
     width: 750px;
     background-color: #0787B5;
-    padding: 10px;
+    padding: 5px;
 
     @media (max-width: 600px) {   
         background-color: #0787B5;
@@ -102,10 +94,9 @@ export const ContText = styled.div`
 `
 export const BoxTitle = styled.div`
     width: 490px;
-    margin-left: 80px;
-    margin-top: 80px;
     letter-spacing: 5;
-
+    margin-left: 50px;
+    margin-top: 50px;
     @media (max-width: 600px) {   
         width: 10px;
         margin-left: 180px;
@@ -116,7 +107,7 @@ export const ContSubscription = styled.div`
     height: 150px;
     width: 750px;
     background-color: ${rgba('#fff', 0.6)};
-    padding: 10px;
+    padding: 5px;
     display: flex;
     align-items: center;
 
@@ -140,13 +131,12 @@ export const ContDescription1 = styled.p`
     }
 `
 export const ContAndSubscription = styled.div`
-    height: 254px;
+    height: 200px;
     width: 750px;
     background-color:#CADBF2;
     display: flex;
     align-items: center;
     justify-content: end;
-
     @media (max-width: 600px) {   
         height: 30vh;
         width: 360px;
@@ -268,8 +258,6 @@ export const CircleNext = styled.div`
 `
 //galeria
 export const ContainerGaleria = styled.div`
-    margin: 0 auto;
-    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,7 +285,6 @@ export const CircleDetail = styled.div`
 `
 export const ContainerSistem = styled.div`
     align-items: center;
-    margin-top: 250px;
     background-image: url(${detailEsp});
     background-size: 105% auto;
     background-repeat: no-repeat;
@@ -316,13 +303,11 @@ export const DivText = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: -300px;
 `
 export const ContALign = styled.div`
     display: flex;
 `
 export const ContainerConteudoTexto = styled.div`
-    height: 1000px;
     margin-left: 10%;
     display: grid;
     grid-template-columns:repeat(3, 1fr);
@@ -406,13 +391,11 @@ export const BlocoImg = styled.div`
     }
 `
 export const ContainerServicos = styled.div`
-    margin-top: 10px;
     background-image: url(${bgquad});
-    height: 852px;
     background-repeat: no-repeat;
     padding-top: 1px;
-    height: 750px;
-
+    display: flex;
+    flex-direction: column;
     @media (max-width: 600px) {   
         background-size: 100% auto;
         /* background-color: red; */
@@ -421,7 +404,6 @@ export const ContainerServicos = styled.div`
     }
 `
 export const BoxBalance = styled.div`
-    height: 700px;
     padding-top: 15px;
 
     @media (max-width: 600px) {   
@@ -433,8 +415,7 @@ export const ContainerBalance = styled.div`
     background-color: green;
     margin-top: 10px;
     background-image: url(${bgBalance});
-    /* height: 852px; */
-    background-size: 100% auto;
+    background-size:100% auto;
     background-repeat: no-repeat;
 
     @media (max-width: 600px) {   
@@ -482,8 +463,6 @@ export const ContainerFormulário = styled.div`
 export const DivTextTitle = styled.div`
     /* background-color: red; */
     margin-left: 150px;
-    margin-top: -25px;
-
     @media (max-width: 600px) {   
         margin-left: 15px;
         margin-top: 15px;
@@ -586,7 +565,6 @@ export const BoxTitlee = styled.h3`
   color: #333;
   font-size: 2rem;
   text-align: center;
-
   @media (min-width: 1024px) {
     font-size: 1.5rem;
   }

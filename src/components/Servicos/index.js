@@ -78,7 +78,7 @@ export default function Servico() {
 
                     </ContainerTitle>
                     <BoxImg2>
-                        <p style={{ color: 'white', fontSize: 13, marginTop: -75,marginRight: 25 }}>
+                        <p style={{ marginTop: -10,color: 'white', fontSize: 13,marginRight: 25 }}>
                                 Equipe especializada para <br/> fabricação e montagem de redes <br/> dutos metálicos e MPU <br/> <br/>
 
                                 Os dutos são fabricadas <br/> conforme normas vigentes e <br/> especificações de projetos <br/> segudno um rigoroso processo <br/>
